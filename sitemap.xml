@@ -2,10 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://eggroll.pages.dev/articles/%E4%B8%80%E4%B8%AA%E6%99%AE%E9%80%9A%E7%9A%84%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://eggroll.pages.dev/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eggroll.pages.dev/categories/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/post/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/test/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/css/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/html/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/markdown/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/markdown-syntax-guide/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/categories/syntax/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://eggroll.pages.dev/tags/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/categories/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/privacy/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/rich-content/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/shortcodes/</loc>
+    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/placeholder-text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/tag-with-whitespaces/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/categories/test/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/categories/test-with-whitespaces/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/math-typesetting/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/tags/emoji/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/p/emoji-support/</loc>
+    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://eggroll.pages.dev/links/</loc>
+  </url><url>
+    <loc>https://eggroll.pages.dev/search/</loc>
+  </url><url>
+    <loc>https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/</loc>
   </url>
 </urlset>
