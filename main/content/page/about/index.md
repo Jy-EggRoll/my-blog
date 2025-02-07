@@ -3,6 +3,7 @@ title: 关于
 description: 本网站采用开软软件 Hugo 和开源主题 Stack 构建。
 date: 2025-02-06
 lastmod: 2025-02-06
+image: desk.jpg
 menu:
     main: 
         weight: -90
