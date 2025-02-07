@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on 蛋卷儿的博客</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://eggroll.pages.dev/page/</link>
         <description>Recent content in Pages on 蛋卷儿的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>关于</title>
-        <link>http://localhost:1313/%E5%85%B3%E4%BA%8E/</link>
+        <link>https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/</link>
         <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;img src="http://localhost:1313/%E5%85%B3%E4%BA%8E/desk.jpg" alt="Featured image of post 关于" /&gt;&lt;h2 id=&#34;版权声明&#34;&gt;版权声明
+        <guid>https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/desk.jpg" alt="Featured image of post 关于" /&gt;&lt;h2 id=&#34;版权声明&#34;&gt;版权声明
 &lt;/h2&gt;&lt;p&gt;根据《中华人民共和国著作权法》第二十四条，在下列情况下使用作品，可以不经著作权人许可，不向其支付报酬，但应当指明作者姓名或者名称、作品名称，并且不得影响该作品的正常使用，也不得不合理地损害著作权人的合法权益：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;（一）为个人学习、研究或者欣赏，使用他人已经发表的作品；&lt;/p&gt;
@@ -38,18 +38,18 @@
         </item>
         <item>
         <title>归档</title>
-        <link>http://localhost:1313/archives/</link>
+        <link>https://eggroll.pages.dev/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/archives/</guid>
+        <guid>https://eggroll.pages.dev/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>链接</title>
-        <link>http://localhost:1313/%E9%93%BE%E6%8E%A5/</link>
+        <link>https://eggroll.pages.dev/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/%E9%93%BE%E6%8E%A5/</guid>
+        <guid>https://eggroll.pages.dev/%E9%93%BE%E6%8E%A5/</guid>
         <description>&lt;p&gt;链接特性待完善。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -79,10 +79,10 @@
         </item>
         <item>
         <title>搜索</title>
-        <link>http://localhost:1313/search/</link>
+        <link>https://eggroll.pages.dev/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/search/</guid>
+        <guid>https://eggroll.pages.dev/search/</guid>
         <description></description>
         </item>
         

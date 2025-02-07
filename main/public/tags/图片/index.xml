@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>图片 on 蛋卷儿的博客</title>
-        <link>http://localhost:1313/tags/%E5%9B%BE%E7%89%87/</link>
+        <link>https://eggroll.pages.dev/tags/%E5%9B%BE%E7%89%87/</link>
         <description>Recent content in 图片 on 蛋卷儿的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>图片来源更新</title>
-        <link>http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</link>
+        <link>https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</link>
         <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/desk.jpg" alt="Featured image of post 图片来源更新" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
+        <guid>https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/desk.jpg" alt="Featured image of post 图片来源更新" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
 &lt;/h2&gt;&lt;p&gt;目前，在我的博客中，文艺类和风景类图片的主要来源是：&lt;a class=&#34;link&#34; href=&#34;https://pixabay.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pixabay.com/&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;网站的说明为：&lt;/p&gt;
@@ -21,11 +21,11 @@
 &lt;p&gt;Pixabay is a vibrant community of creatives, sharing royalty-free images, videos, audio and other media. All content is released by Pixabay under the Content License, which makes it safe to use without asking for permission or giving credit to the artist - even for certain commercial purposes.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;译文如下：Pixabay 是一个充满活力的创意社区，分享免版权图片、视频、音频和其他媒体资源。所有内容都由 Pixabay 依据内容许可发布，这使得在使用时无需征求许可或给艺术家署名——即便是用于某些商业目的。&lt;/p&gt;
 &lt;h2 id=&#34;图片测试&#34;&gt;图片测试
-&lt;/h2&gt;&lt;p&gt;为什么图片不加载？&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain-3022908.jpg&#34;
+&lt;/h2&gt;&lt;p&gt;本网站不仅支持常规的图片加载，也支持相册语法，多张图片的排布是自动的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain.jpg&#34;
 	width=&#34;5858&#34;
 	height=&#34;3905&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain-3022908_hu_10962d38b0f245fe.jpg 480w, http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain-3022908_hu_38368138332e840f.jpg 1024w&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain_hu_10962d38b0f245fe.jpg 480w, https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain_hu_38368138332e840f.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;长城&#34;
@@ -35,10 +35,10 @@
 		data-flex-grow=&#34;150&#34;
 		data-flex-basis=&#34;360px&#34;
 	
-&gt; &lt;img src=&#34;http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset-6369825.jpg&#34;
+&gt; &lt;img src=&#34;https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset.jpg&#34;
 	width=&#34;4000&#34;
 	height=&#34;6000&#34;
-	srcset=&#34;http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset-6369825_hu_149a9dedde2dd80e.jpg 480w, http://localhost:1313/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset-6369825_hu_87fae6d65d0ec04a.jpg 1024w&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset_hu_149a9dedde2dd80e.jpg 480w, https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/sunset_hu_87fae6d65d0ec04a.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;日落&#34;

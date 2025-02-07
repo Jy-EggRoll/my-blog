@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on 蛋卷儿的博客</title>
-        <link>http://localhost:1313/tags/hugo/</link>
+        <link>https://eggroll.pages.dev/tags/hugo/</link>
         <description>Recent content in Hugo on 蛋卷儿的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 06 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>用于博客自动构建的脚本</title>
-        <link>http://localhost:1313/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</link>
+        <link>https://eggroll.pages.dev/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</link>
         <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</guid>
-        <description>&lt;img src="http://localhost:1313/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/computer.jpg" alt="Featured image of post 用于博客自动构建的脚本" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
+        <guid>https://eggroll.pages.dev/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/computer.jpg" alt="Featured image of post 用于博客自动构建的脚本" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
 &lt;/h2&gt;&lt;p&gt;本文只供作者本人使用，仅有参考价值。&lt;/p&gt;
 &lt;p&gt;踩了无数次的坑，终于把这个脚本写好了；误删了好几次文件，幸好有 &lt;code&gt;Git&lt;/code&gt;！&lt;/p&gt;
 &lt;p&gt;此脚本必须在 &lt;code&gt;main&lt;/code&gt; 文件夹内使用！&lt;/p&gt;

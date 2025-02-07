@@ -13,7 +13,7 @@
         <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/sunshine-%E5%85%A5%E9%97%A8/</guid>
-        <description>&lt;img src="https://eggroll.pages.dev/p/sunshine-%E5%85%A5%E9%97%A8/sun-979325.jpg" alt="Featured image of post Sunshine 入门" /&gt;&lt;h2 id=&#34;sunshine-介绍&#34;&gt;Sunshine 介绍
+        <description>&lt;img src="https://eggroll.pages.dev/p/sunshine-%E5%85%A5%E9%97%A8/sun.jpg" alt="Featured image of post Sunshine 入门" /&gt;&lt;h2 id=&#34;sunshine-介绍&#34;&gt;Sunshine 介绍
 &lt;/h2&gt;&lt;p&gt;Sunshine 是一款用于串流的软件。&lt;/p&gt;
 &lt;h2 id=&#34;校园网串流部署&#34;&gt;校园网串流部署
 &lt;/h2&gt;&lt;p&gt;管理员运行 &lt;code&gt;PowerShell&lt;/code&gt; 分别输入以下命令放行 &lt;code&gt;Moonlight&lt;/code&gt; 所需要的端口：&lt;/p&gt;
