@@ -1,18 +1,20 @@
 ---
 title: 用于博客自动构建的脚本
-description: 仅有参考价值
+description: 仅有参考价值哦
 date: 2025-02-06
+lastmod: 2025-02-07
 image: computer.jpg
 categories:
     - 技术
 tags:
     - hugo
     - bash
+    - 脚本
 ---
 
 ## 说明
 
-本文只供作者本人使用，仅有参考价值。
+本文代码只供作者本人使用，仅有参考价值。
 
 踩了无数次的坑，终于把这个脚本写好了；误删了好几次文件，幸好有 `Git`！
 
@@ -23,7 +25,7 @@ tags:
 ```bash
 # 检测当前目录是否为 main 目录
 current_dir=$(basename "$(pwd)")
-if [ "$current_dir" != "my-blog" ]; then
+if [ "$current_dir" != "main" ]; then
     echo "当前不在 main 目录内，防止误删文件，脚本终止。"
     exit 1
 fi
