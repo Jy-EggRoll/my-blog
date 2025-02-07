@@ -1,5 +1,10 @@
-+++
-date = '{{ .Date }}'
-draft = true
-title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-+++
+---
+title: {{ replace .Name "-" " " | title }}
+date: {{ (time .Date).Format "2006-01-02" }}
+lastmod: 
+categories:
+    - 
+tags:
+    - 
+---
+
