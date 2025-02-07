@@ -1,6 +1,7 @@
 ---
 title: Sunshine 入门
 date: 2024-12-10
+lastmod:
 categories:
     - 技术
 tags:

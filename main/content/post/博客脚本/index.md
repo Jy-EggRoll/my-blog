@@ -2,6 +2,7 @@
 title: 用于博客自动构建的脚本
 description: 仅有参考价值
 date: 2025-02-06
+lastmod:
 categories:
     - 技术
     - 脚本
