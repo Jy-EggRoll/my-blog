@@ -14,7 +14,7 @@
         
         <guid>https://eggroll.pages.dev/p/stack-%E4%B8%BB%E9%A2%98%E6%B5%8B%E8%AF%95/</guid>
         <description>&lt;img src="https://eggroll.pages.dev/p/stack-%E4%B8%BB%E9%A2%98%E6%B5%8B%E8%AF%95/%E7%B4%AB%E8%89%B2%E5%A4%A9%E7%A9%BA.png" alt="Featured image of post Stack 主题测试" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
-&lt;/h2&gt;&lt;p&gt;霁雨初晴惊鸿现 月下云隐静阁生&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;你好，我的博客！&lt;/p&gt;
 &lt;h2 id=&#34;引用测试&#34;&gt;引用测试
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;/p&gt;
@@ -69,9 +69,7 @@
 &lt;p&gt;黄金分割：$\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/p&gt;
 &lt;h3 id=&#34;简单块级公式&#34;&gt;简单块级公式
 &lt;/h3&gt;$$
-x=\frac{a_0}{a_1}
-$$$$
- \varphi = 1+\frac{1}{1+\frac{1}{1+\frac{1}{1+\cdots}}}
+\varphi = 1+\frac{1}{1+\frac{1}{1+\frac{1}{1+\cdots}}}
 $$&lt;h2 id=&#34;代码测试&#34;&gt;代码测试
 &lt;/h2&gt;&lt;p&gt;C 语言：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
