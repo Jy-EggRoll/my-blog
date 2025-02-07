@@ -1,7 +1,7 @@
 ---
 title: Stack 主题测试
 date: 2025-02-06
-lastmod:
+lastmod: 2025-02-07
 image: 紫色天空.png
 categories:
     - 测试
