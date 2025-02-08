@@ -3,7 +3,7 @@ title: 用于博客自动构建的脚本
 description: 仅有参考价值哦
 date: 2025-02-06
 lastmod: 2025-02-07
-image: computer.jpg
+image: 
 categories:
     - 技术
 tags:

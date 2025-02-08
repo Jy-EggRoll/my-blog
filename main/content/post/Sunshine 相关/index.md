@@ -2,7 +2,7 @@
 title: Sunshine 入门
 date: 2024-12-10
 lastmod: 2025-02-07
-image: sun.jpg
+image: 
 categories:
     - 技术
 tags:

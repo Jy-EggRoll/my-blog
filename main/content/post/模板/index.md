@@ -2,7 +2,6 @@
 title: 目前新建文章使用的模板
 date: 2025-02-07
 lastmod: 
-image: code.jpg
 categories:
     - 技术
 tags:
