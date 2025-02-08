@@ -2,7 +2,7 @@
 title: 图片来源更新
 date: 2025-02-07
 lastmod: 2025-02-08
-image: px.png
+image: 
 categories:
     - 技术
 tags:
