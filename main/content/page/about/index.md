@@ -1,6 +1,6 @@
 ---
 title: 关于
-description: 本网站采用开软软件 Hugo 和开源主题 Stack 构建。
+description: 
 date: 2025-02-06
 lastmod: 2025-02-06
 image: desk.jpg
@@ -10,6 +10,24 @@ menu:
         params:
             icon: user
 ---
+
+## 关于作者
+
+你好，我是蛋卷儿！目前就读于北京邮电大学计算机学院，数据科学与大数据技术专业。
+
+我热爱学习我感兴趣的新知识，最近我在学习计算机基础、前端开发等技术。
+
+我喜欢音乐、动漫，整体来看，我热爱技术和艺术。
+
+### 技能
+
+- 擅长 Au、Ps、Pr 等专业软件软件的安装与卸载；
+- 精通 CSS、JavaScript、C、Java、Python、Rust 等单词的拼写；
+- 熟悉 Windows、Linux、Android 等系统的开关机……
+
+## 关于网站
+
+本网站采用开源软件 Hugo 和开源主题 Stack 构建，在一定程度上做了自定义和修改。
 
 ## 版权声明
 
