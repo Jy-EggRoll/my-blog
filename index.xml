@@ -7,14 +7,23 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Sun, 09 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 11 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>盲打练习</title>
+        <link>https://eggroll.pages.dev/p/%E7%9B%B2%E6%89%93%E7%BB%83%E4%B9%A0/</link>
+        <pubDate>Tue, 11 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/%E7%9B%B2%E6%89%93%E7%BB%83%E4%B9%A0/</guid>
+        <description>&lt;p&gt;越来越意识到盲打的重要性了，我需要不断练习！&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>现代化系统重装教程</title>
         <link>https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sun, 09 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
         <description>&lt;img src="https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/keyboard.jpg" alt="Featured image of post 现代化系统重装教程" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
-&lt;/h2&gt;&lt;p&gt;本文完全参照个人习惯，做不到事无巨细，但会逐步修改完善。&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;本文完全参照个人习惯，做不到事无巨细，但会逐渐更新完善。&lt;/p&gt;
 &lt;h2 id=&#34;备份驱动&#34;&gt;备份驱动
 &lt;/h2&gt;&lt;p&gt;采用 Dism++：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Chuyu-Team/Dism-Multi-language/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/Chuyu-Team/Dism-Multi-language/releases&lt;/a&gt;。&lt;/p&gt;
