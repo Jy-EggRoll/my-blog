@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>手机连接 on 蛋卷儿的博客</title>
+        <link>https://eggroll.pages.dev/tags/%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5/</link>
+        <description>Recent content in 手机连接 on 蛋卷儿的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蛋卷儿</copyright>
+        <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>禁用手机连接的自启动</title>
+        <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
+        <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
+        <description>&lt;p&gt;微软的&lt;code&gt;手机连接&lt;/code&gt;软件在禁用了明面上能找的所有自启动选项后，仍然屡次自启动，单单一晚上就让我手动关闭三次之多。&lt;/p&gt;
+&lt;p&gt;我实在忍无可忍了，开始寻找一下解决方法。&lt;/p&gt;
+&lt;h2 id=&#34;解决方案已确认没用仅供尝试&#34;&gt;解决方案（已确认没用，仅供尝试）
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;搜索&lt;code&gt;系统组件&lt;/code&gt;，进入系统组件设置
+&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E8%AE%BE%E7%BD%AE.png&#34;
+	width=&#34;560&#34;
+	height=&#34;162&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E8%AE%BE%E7%BD%AE_hu_9e67be224703e3a5.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E8%AE%BE%E7%BD%AE_hu_137519d51b5172e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;搜索设置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;345&#34;
+		data-flex-basis=&#34;829px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;点击&lt;code&gt;手机连接&lt;/code&gt;右边的三个点，进入高级选项
+&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E9%AB%98%E7%BA%A7%E9%80%89%E9%A1%B9.png&#34;
+	width=&#34;1751&#34;
+	height=&#34;1375&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E9%AB%98%E7%BA%A7%E9%80%89%E9%A1%B9_hu_bd861d08a2b2f161.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E9%AB%98%E7%BA%A7%E9%80%89%E9%A1%B9_hu_e4aa35ee5412dc6c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;高级选项&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;305px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;设为&lt;code&gt;从不&lt;/code&gt;
+&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E4%BB%8E%E4%B8%8D.png&#34;
+	width=&#34;637&#34;
+	height=&#34;260&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E4%BB%8E%E4%B8%8D_hu_63e66b113f92702b.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E4%BB%8E%E4%B8%8D_hu_9569fd171056e44e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;从不&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;245&#34;
+		data-flex-basis=&#34;588px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;手动终止软件
+&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E7%BB%88%E6%AD%A2.png&#34;
+	width=&#34;1768&#34;
+	height=&#34;1373&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E7%BB%88%E6%AD%A2_hu_2681161b4bd80924.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E7%BB%88%E6%AD%A2_hu_1b327af99ee9560f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;终止&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;309px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;感想&#34;&gt;感想
+&lt;/h2&gt;&lt;p&gt;就在我写这篇文章的一段时间里，在完全禁止了手机连接后台运行的情况下，手机连接再一次顽强地自启动成功了，点赞🤡&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
