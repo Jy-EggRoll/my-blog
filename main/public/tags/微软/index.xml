@@ -7,15 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E5%BE%AE%E8%BD%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E5%BE%AE%E8%BD%AF/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>禁用手机连接的自启动</title>
         <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
         <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
-        <description>&lt;p&gt;微软的&lt;code&gt;手机连接&lt;/code&gt;软件在禁用了明面上能找的所有自启动选项后，仍然屡次自启动，单单一晚上就让我手动关闭三次之多。&lt;/p&gt;
+        <description>&lt;p&gt;微软的&lt;code&gt;手机连接&lt;/code&gt;软件更新到某版本后，在禁用了明面上能找的所有自启动选项后，仍然屡次自启动，单单一晚上就让我手动关闭三次之多。&lt;/p&gt;
 &lt;p&gt;我实在忍无可忍了，开始寻找一下解决方法。&lt;/p&gt;
-&lt;h2 id=&#34;解决方案已确认无用仅供尝试&#34;&gt;解决方案（已确认无用，仅供尝试）
+&lt;h2 id=&#34;解决方案可能有用仅供尝试&#34;&gt;解决方案（可能有用，仅供尝试）
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;搜索&lt;code&gt;系统组件&lt;/code&gt;，进入系统组件设置
 &lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E8%AE%BE%E7%BD%AE.png&#34;
@@ -80,8 +80,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;感想&#34;&gt;感想
 &lt;/h2&gt;&lt;p&gt;就在我写这篇文章的一段时间里，在完全禁止了手机连接后台运行的情况下，手机连接再一次顽强地自启动成功了，点赞🤡&lt;/p&gt;
-&lt;p&gt;此软件的稳定性就像💩一样，难堪大用。&lt;/p&gt;
-&lt;p&gt;但是不管怎么说，微软开发这款软件的初心是好的，希望微软能不断优化，不辜负用户的期待。&lt;/p&gt;
+&lt;p&gt;此软件的稳定性欠佳，难堪大用。但是不管怎么说，微软开发这款软件的初心是好的，希望微软能不断优化，不辜负用户的期待。&lt;/p&gt;
 </description>
         </item>
         

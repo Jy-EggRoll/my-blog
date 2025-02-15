@@ -1,5 +1,5 @@
 ---
-title: 目前新建文章使用的模板
+title: Hugo 新建文章使用的模板
 date: 2025-02-07
 lastmod: 2025-02-09
 categories:

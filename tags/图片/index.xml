@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Sat, 08 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E5%9B%BE%E7%89%87/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>图片来源更新</title>
         <link>https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</link>
         <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</guid>
-        <description>&lt;h2 id=&#34;说明&#34;&gt;说明
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain.jpg" alt="Featured image of post 图片来源更新" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
 &lt;/h2&gt;&lt;p&gt;目前，在我的博客中，文艺类和风景类图片的主要来源是：&lt;a class=&#34;link&#34; href=&#34;https://pixabay.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pixabay.com/&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;网站的说明为：&lt;/p&gt;
@@ -51,6 +51,9 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;关于性能优化&#34;&gt;关于性能优化
 &lt;/h2&gt;&lt;p&gt;加载高清原图对网速的要求属实过高，在今后，我使用的图片大多会经过酌情压缩。压缩的程度是：以屏幕大小 1920 * 1080 为基准，根据该图片能在页面上占据的最大空间决定该图片的分辨率，以最大幅度优化网页加载速度。&lt;/p&gt;
+&lt;h2 id=&#34;其他说明&#34;&gt;其他说明
+&lt;/h2&gt;&lt;p&gt;有一些图片，有时其作者难以找到，或是无从查找是否有明确的版权说明。为了增加文章的美观度，我可能采用此类图片。更加详细的说明参照此处：&lt;a class=&#34;link&#34; href=&#34;https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;本博客的版权声明&lt;/a&gt;。&lt;/p&gt;
 </description>
         </item>
         

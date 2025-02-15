@@ -3,9 +3,9 @@ title: 本博客的目标
 description: 
 date: 2025-02-13
 lastmod: 2025-02-13
-image: 
+image: goal.jpg
 categories:
-    - 
+    - 愿景
 tags:
     - 
 ---

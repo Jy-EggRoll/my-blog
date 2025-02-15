@@ -7,15 +7,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows on ARM 系统重装指南</title>
+        <link>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</link>
+        <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png" alt="Featured image of post Windows on ARM 系统重装指南" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+&lt;/h2&gt;&lt;p&gt;在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。&lt;/p&gt;
+&lt;h2 id=&#34;使用的-pe&#34;&gt;使用的 PE
+&lt;/h2&gt;&lt;p&gt;我使用的是：&lt;a class=&#34;link&#34; href=&#34;https://bydjpe.winos.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CDBYDJ PE&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE.png&#34;
+	width=&#34;3470&#34;
+	height=&#34;1908&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE_hu_5ee20dcc437cde40.png 480w, https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE_hu_284613d986fa8e98.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;436px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>禁用手机连接的自启动</title>
         <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
         <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</guid>
-        <description>&lt;p&gt;微软的&lt;code&gt;手机连接&lt;/code&gt;软件在禁用了明面上能找的所有自启动选项后，仍然屡次自启动，单单一晚上就让我手动关闭三次之多。&lt;/p&gt;
+        <description>&lt;p&gt;微软的&lt;code&gt;手机连接&lt;/code&gt;软件更新到某版本后，在禁用了明面上能找的所有自启动选项后，仍然屡次自启动，单单一晚上就让我手动关闭三次之多。&lt;/p&gt;
 &lt;p&gt;我实在忍无可忍了，开始寻找一下解决方法。&lt;/p&gt;
-&lt;h2 id=&#34;解决方案已确认无用仅供尝试&#34;&gt;解决方案（已确认无用，仅供尝试）
+&lt;h2 id=&#34;解决方案可能有用仅供尝试&#34;&gt;解决方案（可能有用，仅供尝试）
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;搜索&lt;code&gt;系统组件&lt;/code&gt;，进入系统组件设置
 &lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/%E8%AE%BE%E7%BD%AE.png&#34;
@@ -80,8 +108,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;感想&#34;&gt;感想
 &lt;/h2&gt;&lt;p&gt;就在我写这篇文章的一段时间里，在完全禁止了手机连接后台运行的情况下，手机连接再一次顽强地自启动成功了，点赞🤡&lt;/p&gt;
-&lt;p&gt;此软件的稳定性就像💩一样，难堪大用。&lt;/p&gt;
-&lt;p&gt;但是不管怎么说，微软开发这款软件的初心是好的，希望微软能不断优化，不辜负用户的期待。&lt;/p&gt;
+&lt;p&gt;此软件的稳定性欠佳，难堪大用。但是不管怎么说，微软开发这款软件的初心是好的，希望微软能不断优化，不辜负用户的期待。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -168,11 +195,11 @@
 </description>
         </item>
         <item>
-        <title>目前新建文章使用的模板</title>
-        <link>https://eggroll.pages.dev/p/%E7%9B%AE%E5%89%8D%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E4%BD%BF%E7%94%A8%E7%9A%84%E6%A8%A1%E6%9D%BF/</link>
+        <title>Hugo 新建文章使用的模板</title>
+        <link>https://eggroll.pages.dev/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E4%BD%BF%E7%94%A8%E7%9A%84%E6%A8%A1%E6%9D%BF/</link>
         <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://eggroll.pages.dev/p/%E7%9B%AE%E5%89%8D%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E4%BD%BF%E7%94%A8%E7%9A%84%E6%A8%A1%E6%9D%BF/</guid>
+        <guid>https://eggroll.pages.dev/p/hugo-%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0%E4%BD%BF%E7%94%A8%E7%9A%84%E6%A8%A1%E6%9D%BF/</guid>
         <description>&lt;h2 id=&#34;模板如下&#34;&gt;模板如下
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -212,7 +239,7 @@
         <pubDate>Fri, 07 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/</guid>
-        <description>&lt;h2 id=&#34;说明&#34;&gt;说明
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E5%9B%BE%E7%89%87%E6%9D%A5%E6%BA%90%E6%9B%B4%E6%96%B0/mountain.jpg" alt="Featured image of post 图片来源更新" /&gt;&lt;h2 id=&#34;说明&#34;&gt;说明
 &lt;/h2&gt;&lt;p&gt;目前，在我的博客中，文艺类和风景类图片的主要来源是：&lt;a class=&#34;link&#34; href=&#34;https://pixabay.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://pixabay.com/&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;网站的说明为：&lt;/p&gt;
@@ -250,6 +277,9 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;关于性能优化&#34;&gt;关于性能优化
 &lt;/h2&gt;&lt;p&gt;加载高清原图对网速的要求属实过高，在今后，我使用的图片大多会经过酌情压缩。压缩的程度是：以屏幕大小 1920 * 1080 为基准，根据该图片能在页面上占据的最大空间决定该图片的分辨率，以最大幅度优化网页加载速度。&lt;/p&gt;
+&lt;h2 id=&#34;其他说明&#34;&gt;其他说明
+&lt;/h2&gt;&lt;p&gt;有一些图片，有时其作者难以找到，或是无从查找是否有明确的版权说明。为了增加文章的美观度，我可能采用此类图片。更加详细的说明参照此处：&lt;a class=&#34;link&#34; href=&#34;https://eggroll.pages.dev/%E5%85%B3%E4%BA%8E/#%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;本博客的版权声明&lt;/a&gt;。&lt;/p&gt;
 </description>
         </item>
         <item>
