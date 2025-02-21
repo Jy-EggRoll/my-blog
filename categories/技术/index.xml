@@ -7,7 +7,75 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 21 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git Bash 配置</title>
+        <link>https://eggroll.pages.dev/p/git-bash-%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Fri, 21 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/git-bash-%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/git-bash-%E9%85%8D%E7%BD%AE/bash.png" alt="Featured image of post Git Bash 配置" /&gt;&lt;p&gt;Windows 上的默认终端改成 &lt;code&gt;Git Bash&lt;/code&gt; 也已经有一段时间了，解决几个痛点。&lt;/p&gt;
+&lt;p&gt;在个人目录新建 &lt;code&gt;.inputrc&lt;/code&gt; 文件，写入以下配置：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set bell-style audible
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set colored-completion-prefix on
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set colored-stats on
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set completion-ignore-case on
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;set show-all-if-ambiguous on
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;\e[A&amp;#34;: history-search-backward
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;\e[B&amp;#34;: history-search-forward
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;详细说明如下：&lt;/p&gt;
+&lt;h2 id=&#34;变量设置部分&#34;&gt;变量设置部分
+&lt;/h2&gt;&lt;h3 id=&#34;set-bell-style-audible&#34;&gt;&lt;code&gt;set bell-style audible&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：此配置用于控制当 Readline 想要发出提示信号时的响铃行为。&lt;code&gt;audible&lt;/code&gt; 表示 Readline 会尝试使终端发出可听见的铃声。当你在命令行进行某些操作触发提示（如无法完成补全）时，终端会发出声音提醒你。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认值&lt;/strong&gt;：通常默认就是 &lt;code&gt;audible&lt;/code&gt;，即会发出声音。如果设置为 &lt;code&gt;none&lt;/code&gt;，则不会有任何响铃；设置为 &lt;code&gt;visible&lt;/code&gt;，若终端支持可视响铃，会以可视方式提示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set-colored-completion-prefix-on&#34;&gt;&lt;code&gt;set colored-completion-prefix on&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：开启该配置后，在进行命令或文件补全操作，列出补全项时，Readline 会使用不同的颜色来显示可能补全项集合的公共前缀。颜色定义来源于 &lt;code&gt;LS_COLORS&lt;/code&gt; 环境变量的值。这样可以让你更清晰地看到多个补全项的共同部分，增强补全信息的可读性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认值&lt;/strong&gt;：默认是 &lt;code&gt;off&lt;/code&gt;，即不使用彩色显示公共前缀。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set-colored-stats-on&#34;&gt;&lt;code&gt;set colored-stats on&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：当此配置开启，Readline 在显示可能的补全项时，会使用不同的颜色来区分它们的文件类型。例如，目录、可执行文件等可能会以不同颜色显示，同样颜色定义取自 &lt;code&gt;LS_COLORS&lt;/code&gt; 环境变量。通过颜色区分，你能快速了解补全项的文件类型。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认值&lt;/strong&gt;：默认是 &lt;code&gt;off&lt;/code&gt;，补全项不会根据文件类型用颜色区分。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set-completion-ignore-case-on&#34;&gt;&lt;code&gt;set completion-ignore-case on&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：设置为 &lt;code&gt;on&lt;/code&gt; 后，Readline 在进行文件名匹配和命令补全时将不区分大小写。这意味着你在输入命令或文件名的一部分进行补全时，不管输入的字母是大写还是小写，都能找到匹配项，大大提高了补全的便利性。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认值&lt;/strong&gt;：默认是 &lt;code&gt;off&lt;/code&gt;，补全时区分大小写。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set-show-all-if-ambiguous-on&#34;&gt;&lt;code&gt;set show-all-if-ambiguous on&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：当按下 &lt;code&gt;Tab&lt;/code&gt; 键进行补全，出现多个可能的补全选项（即存在歧义）时，此配置会让 Readline 直接列出所有可能的选项，而不是像默认情况那样再次按 &lt;code&gt;Tab&lt;/code&gt; 才显示。这样你能第一时间看到所有可能的补全结果，方便选择。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认值&lt;/strong&gt;：默认是 &lt;code&gt;off&lt;/code&gt;，遇到歧义时需要再次按 &lt;code&gt;Tab&lt;/code&gt; 才会显示所有选项。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;键绑定部分&#34;&gt;键绑定部分
+&lt;/h2&gt;&lt;h3 id=&#34;ea-history-search-backward&#34;&gt;&lt;code&gt;&amp;quot;\e[A&amp;quot;: history-search-backward&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：这里的 &lt;code&gt;&amp;quot;\e[A&amp;quot;&lt;/code&gt; 代表键盘上的上箭头键 &lt;code&gt;↑&lt;/code&gt;。此配置将上箭头键绑定到 &lt;code&gt;history-search-backward&lt;/code&gt; 功能，即向前搜索历史命令。当你在命令行输入了部分命令内容后，按下上箭头键，Readline 会在历史命令中搜索以当前输入内容开头的命令，并逐步向前显示。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认行为&lt;/strong&gt;：默认情况下，上箭头键只是简单地按顺序浏览历史命令，不考虑当前输入的内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;eb-history-search-forward&#34;&gt;&lt;code&gt;&amp;quot;\e[B&amp;quot;: history-search-forward&lt;/code&gt;
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：&lt;code&gt;&amp;quot;\e[B&amp;quot;&lt;/code&gt; 对应键盘上的下箭头键 &lt;code&gt;↓&lt;/code&gt;。该配置把下箭头键绑定到 &lt;code&gt;history-search-forward&lt;/code&gt; 功能，也就是向后搜索历史命令。当你使用上箭头键搜索历史命令后，再按下下箭头键，Readline 会反向搜索以当前输入内容开头的历史命令。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;默认行为&lt;/strong&gt;：默认下箭头键同样是按顺序浏览历史命令，不关联当前输入内容。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Windows on ARM 系统重装指南</title>
         <link>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</link>
         <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
@@ -15,6 +83,7 @@
         <guid>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</guid>
         <description>&lt;img src="https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png" alt="Featured image of post Windows on ARM 系统重装指南" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
 &lt;/h2&gt;&lt;p&gt;在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。&lt;/p&gt;
+&lt;p&gt;（文章持续更新中）&lt;/p&gt;
 &lt;h2 id=&#34;使用的-pe&#34;&gt;使用的 PE
 &lt;/h2&gt;&lt;p&gt;我使用的是：&lt;a class=&#34;link&#34; href=&#34;https://bydjpe.winos.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CDBYDJ PE&lt;/a&gt;。&lt;/p&gt;
