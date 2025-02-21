@@ -365,7 +365,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长： 3 分钟
+                    阅读时长： 2 分钟
                 </time>
             </div>
         
@@ -375,7 +375,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
             <time class="article-words">
-                字数： 1077 字
+                字数： 976 字
             </time>
         </div>
         
@@ -418,17 +418,15 @@
 </h2><h3 id="set-bell-style-audible"><code>set bell-style audible</code>
 </h3><ul>
 <li><strong>功能</strong>：此配置用于控制当 Readline 想要发出提示信号时的响铃行为。<code>audible</code> 表示 Readline 会尝试使终端发出可听见的铃声。当你在命令行进行某些操作触发提示（如无法完成补全）时，终端会发出声音提醒你。</li>
-<li><strong>默认值</strong>：通常默认就是 <code>audible</code>，即会发出声音。如果设置为 <code>none</code>，则不会有任何响铃；设置为 <code>visible</code>，若终端支持可视响铃，会以可视方式提示。</li>
+<li><strong>默认值</strong>：我觉得是 <code>visible</code>，若终端支持可视响铃，会以可视方式提示，我就是因为删个文字，屏幕哗哗闪才改这个的。<code>audible</code>，会发出声音。如果设置为 <code>none</code>，则不会有任何效果。</li>
 </ul>
 <h3 id="set-colored-completion-prefix-on"><code>set colored-completion-prefix on</code>
 </h3><ul>
-<li><strong>功能</strong>：开启该配置后，在进行命令或文件补全操作，列出补全项时，Readline 会使用不同的颜色来显示可能补全项集合的公共前缀。颜色定义来源于 <code>LS_COLORS</code> 环境变量的值。这样可以让你更清晰地看到多个补全项的共同部分，增强补全信息的可读性。</li>
-<li><strong>默认值</strong>：默认是 <code>off</code>，即不使用彩色显示公共前缀。</li>
+<li><strong>功能</strong>：开启该配置后，在进行命令或文件补全操作，列出补全项时，Readline 会使用不同的颜色来显示可能补全项集合的公共前缀。</li>
 </ul>
 <h3 id="set-colored-stats-on"><code>set colored-stats on</code>
 </h3><ul>
-<li><strong>功能</strong>：当此配置开启，Readline 在显示可能的补全项时，会使用不同的颜色来区分它们的文件类型。例如，目录、可执行文件等可能会以不同颜色显示，同样颜色定义取自 <code>LS_COLORS</code> 环境变量。通过颜色区分，你能快速了解补全项的文件类型。</li>
-<li><strong>默认值</strong>：默认是 <code>off</code>，补全项不会根据文件类型用颜色区分。</li>
+<li><strong>功能</strong>：当此配置开启，Readline 在显示可能的补全项时，会使用不同的颜色来区分它们的文件类型。例如，目录、可执行文件等可能会以不同颜色显示。通过颜色区分，能快速了解补全项的文件类型。</li>
 </ul>
 <h3 id="set-completion-ignore-case-on"><code>set completion-ignore-case on</code>
 </h3><ul>
@@ -437,18 +435,18 @@
 </ul>
 <h3 id="set-show-all-if-ambiguous-on"><code>set show-all-if-ambiguous on</code>
 </h3><ul>
-<li><strong>功能</strong>：当按下 <code>Tab</code> 键进行补全，出现多个可能的补全选项（即存在歧义）时，此配置会让 Readline 直接列出所有可能的选项，而不是像默认情况那样再次按 <code>Tab</code> 才显示。这样你能第一时间看到所有可能的补全结果，方便选择。</li>
-<li><strong>默认值</strong>：默认是 <code>off</code>，遇到歧义时需要再次按 <code>Tab</code> 才会显示所有选项。</li>
+<li><strong>功能</strong>：当按下 <kbd>Tab</kbd> 键进行补全，出现多个可能的补全选项（即存在歧义）时，此配置会让 Readline 直接列出所有可能的选项，而不是像默认情况那样再次按 <kbd>Tab</kbd> 才显示。这样你能第一时间看到所有可能的补全结果，方便选择。</li>
+<li><strong>默认值</strong>：默认是 <code>off</code>，遇到歧义时需要再次按 <kbd>Tab</kbd> 才会显示所有选项。</li>
 </ul>
 <h2 id="键绑定部分">键绑定部分
 </h2><h3 id="ea-history-search-backward"><code>&quot;\e[A&quot;: history-search-backward</code>
 </h3><ul>
-<li><strong>功能</strong>：这里的 <code>&quot;\e[A&quot;</code> 代表键盘上的上箭头键 <code>↑</code>。此配置将上箭头键绑定到 <code>history-search-backward</code> 功能，即向前搜索历史命令。当你在命令行输入了部分命令内容后，按下上箭头键，Readline 会在历史命令中搜索以当前输入内容开头的命令，并逐步向前显示。</li>
+<li><strong>功能</strong>：这里的 <code>&quot;\e[A&quot;</code> 代表键盘上的上箭头键 <kbd>↑</kbd>。此配置将上箭头键绑定到 <code>history-search-backward</code> 功能，即向前搜索历史命令。当你在命令行输入了部分命令内容后，按下上箭头键，Readline 会在历史命令中搜索以当前输入内容开头的命令，并逐步向前显示。</li>
 <li><strong>默认行为</strong>：默认情况下，上箭头键只是简单地按顺序浏览历史命令，不考虑当前输入的内容。</li>
 </ul>
 <h3 id="eb-history-search-forward"><code>&quot;\e[B&quot;: history-search-forward</code>
 </h3><ul>
-<li><strong>功能</strong>：<code>&quot;\e[B&quot;</code> 对应键盘上的下箭头键 <code>↓</code>。该配置把下箭头键绑定到 <code>history-search-forward</code> 功能，也就是向后搜索历史命令。当你使用上箭头键搜索历史命令后，再按下下箭头键，Readline 会反向搜索以当前输入内容开头的历史命令。</li>
+<li><strong>功能</strong>：<code>&quot;\e[B&quot;</code> 对应键盘上的下箭头键 <kbd>↓</kbd>。该配置把下箭头键绑定到 <code>history-search-forward</code> 功能，也就是向后搜索历史命令。当你使用上箭头键搜索历史命令后，再按下下箭头键，Readline 会反向搜索以当前输入内容开头的历史命令。</li>
 <li><strong>默认行为</strong>：默认下箭头键同样是按顺序浏览历史命令，不关联当前输入内容。</li>
 </ul>
 
