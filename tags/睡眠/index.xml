@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>睡眠 on 蛋卷儿的博客</title>
+        <link>https://eggroll.pages.dev/tags/%E7%9D%A1%E7%9C%A0/</link>
+        <description>Recent content in 睡眠 on 蛋卷儿的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蛋卷儿</copyright>
+        <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E7%9D%A1%E7%9C%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>禁用现代待机下的网络连接</title>
+        <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</link>
+        <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png" alt="Featured image of post 禁用现代待机下的网络连接" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+&lt;/h2&gt;&lt;p&gt;我的电脑是 2023 年购入的轻薄本，完全弃用了传统的 S3 待机模式（写入到内存），而采用了 S0 现代待机。该模式并不好用，导致了许多 bug，包括但不限于蓝牙连接问题。我对其颇有微词。&lt;/p&gt;
+&lt;p&gt;写这篇文章，源于我的电脑在睡眠模式下，又毫无征兆地自启动了。遗憾的是，由于采用了 S0，许多经典的命令用起来是没有效果的。&lt;/p&gt;
+&lt;p&gt;举个例子，如果电脑是 S3，那么在 CMD 或者 PowerShell 下执行 &lt;code&gt;powercfg /lastwake&lt;/code&gt;，效果是读取电脑上一次被唤醒的原因。而在 S0 电脑上，效果如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%91%BD%E4%BB%A4.png&#34;
+	width=&#34;638&#34;
+	height=&#34;178&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%91%BD%E4%BB%A4_hu_1bc7deeda9a24183.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%91%BD%E4%BB%A4_hu_32eb7ec1ae111f93.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;命令&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;358&#34;
+		data-flex-basis=&#34;860px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;powercfg -a&lt;/code&gt;，可以显示电脑启用的各种睡眠、休眠类型：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png&#34;
+	width=&#34;926&#34;
+	height=&#34;1237&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81_hu_fa6cf407b19e59d1.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81_hu_497b2d15bbe732e6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;状态&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;74&#34;
+		data-flex-basis=&#34;179px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在通常情况下，S0 状态下网络是连接的，也会具有“快速启动”状态，我取消了这两个功能。如何取消快速启动，网络上教程比较多，而取消 S0 的网络连接，教程就比较稀缺了。&lt;/p&gt;
+&lt;p&gt;之所以要取消网络连接功能，是因为我怀疑睡眠的自动唤醒和网络有关，今天先作此尝试，通过实践判断还会不会出现无故唤醒的情况（注：电脑的唤醒定时器早已设为禁用，然而并没有效果）。&lt;/p&gt;
+&lt;h2 id=&#34;取消网络连接&#34;&gt;取消网络连接
+&lt;/h2&gt;&lt;p&gt;进入注册表编辑器，目录为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-reg&#34; data-lang=&#34;reg&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;err&#34;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\F15576E8-98B7-4186-B944-EAFA664402D9&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将其属性改为 2。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%B1%9E%E6%80%A7.png&#34;
+	width=&#34;1215&#34;
+	height=&#34;157&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%B1%9E%E6%80%A7_hu_dacb6fb7f2b2ba72.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E5%B1%9E%E6%80%A7_hu_b53acdc6e257c76.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;属性&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;773&#34;
+		data-flex-basis=&#34;1857px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;此后进入高级电源设置，将网络连接全部改为禁用即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%94%B5%E6%BA%90.png&#34;
+	width=&#34;2252&#34;
+	height=&#34;1120&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%94%B5%E6%BA%90_hu_ac185611e414880d.png 480w, https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%94%B5%E6%BA%90_hu_2cb93f16bfccc9e3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;高级电源&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;482px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;补充&#34;&gt;补充
+&lt;/h2&gt;&lt;p&gt;本文章参考自 &lt;a class=&#34;link&#34; href=&#34;https://www.sulabs.net/?p=1109&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.sulabs.net/?p=1109&lt;/a&gt;，但没有采用文章的方法。&lt;/p&gt;
+&lt;p&gt;直接进入注册表改属性的方法参考自 &lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/554361321&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.zhihu.com/question/554361321&lt;/a&gt;，该文章说明了阻止电脑由睡眠状态进入休眠状态的方法（如果电脑已经开启了休眠）。&lt;/p&gt;
+&lt;p&gt;同理，读者如果发现有一些在其他教程中提到，但自己电脑上并没有的电源设置，多半是因为微软隐藏了。读者大可以触类旁通，搜索注册表中那些字符串，然后根据属性开启。这也是为什么我没有直接采用第一篇博文写入注册表的方法。经历两次类似的情况，我意识到此问题可以是一个系列，欢迎读者参考。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
