@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n之前写过一篇类似的文章，请见现代化系统重装教程。\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
 <title>Windows on ARM 系统重装指南</title>
 
 <link rel='canonical' href='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/'>
 
 <link rel="stylesheet" href="/scss/style.min.6bf83a1272e134b558d43f6c8f15410609225a54e8feecad8c52604a8153e080.css"><meta property='og:title' content="Windows on ARM 系统重装指南">
-<meta property='og:description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
+<meta property='og:description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n之前写过一篇类似的文章，请见现代化系统重装教程。\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
 <meta property='og:url' content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='蛋卷儿的博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2025-02-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png' />
 <meta name="twitter:title" content="Windows on ARM 系统重装指南">
-<meta name="twitter:description" content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n之前写过一篇类似的文章，请见现代化系统重装教程。\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png' />
     <link rel="shortcut icon" href="/favicon.png" />
 
@@ -369,7 +369,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
             <time class="article-words">
-                字数： 353 字
+                字数： 368 字
             </time>
         </div>
         
@@ -387,7 +387,8 @@
     
     <h2 id="引言">引言
 </h2><p>在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。</p>
-<p>（文章持续更新中）</p>
+<p>之前写过一篇类似的文章，请见<a class="link" href="https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/"  target="_blank" rel="noopener"
+    >现代化系统重装教程</a>。</p>
 <h2 id="前置工作">前置工作
 </h2><p>必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。</p>
 <h2 id="使用的-pe">使用的 PE
