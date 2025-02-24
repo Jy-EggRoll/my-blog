@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n使用的 PE\r我使用的是：CDBYDJ PE。\n感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
 <title>Windows on ARM 系统重装指南</title>
 
 <link rel='canonical' href='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/'>
 
 <link rel="stylesheet" href="/scss/style.min.6bf83a1272e134b558d43f6c8f15410609225a54e8feecad8c52604a8153e080.css"><meta property='og:title' content="Windows on ARM 系统重装指南">
-<meta property='og:description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n使用的 PE\r我使用的是：CDBYDJ PE。\n感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。\n">
+<meta property='og:description' content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n">
 <meta property='og:url' content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='蛋卷儿的博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2025-02-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-21T00:00:00&#43;00:00'/><meta property='og:image' content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='' /><meta property='article:published_time' content='2025-02-14T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-02-24T00:00:00&#43;00:00'/><meta property='og:image' content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png' />
 <meta name="twitter:title" content="Windows on ARM 系统重装指南">
-<meta name="twitter:description" content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n使用的 PE\r我使用的是：CDBYDJ PE。\n感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="引言\r在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。\n（文章持续更新中）\n前置工作\r必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png' />
     <link rel="shortcut icon" href="/favicon.png" />
 
@@ -275,7 +275,10 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#引言">引言</a></li>
+    <li><a href="#前置工作">前置工作</a></li>
     <li><a href="#使用的-pe">使用的 PE</a></li>
+    <li><a href="#下载最新镜像">下载最新镜像</a></li>
+    <li><a href="#写入后导入备份好的全部驱动">写入后导入备份好的全部驱动</a></li>
   </ol>
 </nav>
         </div>
@@ -341,7 +344,7 @@
             </div>
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
-            <time class="article-lastmod">2025 年 2 月 21 日</time>
+            <time class="article-lastmod">2025 年 2 月 24 日</time>
         </div>
         
 
@@ -366,7 +369,7 @@
         <div>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-file-description"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 17h6" /><path d="M9 13h6" /></svg>
             <time class="article-words">
-                字数： 108 字
+                字数： 353 字
             </time>
         </div>
         
@@ -385,6 +388,8 @@
     <h2 id="引言">引言
 </h2><p>在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。</p>
 <p>（文章持续更新中）</p>
+<h2 id="前置工作">前置工作
+</h2><p>必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。</p>
 <h2 id="使用的-pe">使用的 PE
 </h2><p>我使用的是：<a class="link" href="https://bydjpe.winos.me/"  target="_blank" rel="noopener"
     >CDBYDJ PE</a>。</p>
@@ -403,6 +408,15 @@
 	
 ></p>
 <p>感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。</p>
+<h2 id="下载最新镜像">下载最新镜像
+</h2><p>推荐网址：<a class="link" href="https://worproject.com/esd"  target="_blank" rel="noopener"
+    >https://worproject.com/esd</a></p>
+<p>选择最新 ARM 镜像下载。</p>
+<h2 id="写入后导入备份好的全部驱动">写入后导入备份好的全部驱动
+</h2><p>这点和常规的 PE 内安装系统的步骤是一致的，大家自行选择喜欢的方法。</p>
+<p>安装完成后，使用 Dism++ 向目标系统导入备份好的全套驱动。</p>
+<p>重启。</p>
+<p>自此，就完成了 ARM 系统的重装。</p>
 
 </section>
 
@@ -417,7 +431,7 @@
     <section class="article-lastmod">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
         <span>
-            最后更新于 2025 年 2 月 21 日
+            最后更新于 2025 年 2 月 24 日
         </span>
     </section></footer>
 
