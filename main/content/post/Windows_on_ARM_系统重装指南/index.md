@@ -7,14 +7,15 @@ image: woa.png
 categories:
     - 技术
 tags:
-    - 
+    -
+weight: 1
 ---
 
 ## 引言
 
 在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。
 
-（文章持续更新中）
+之前写过一篇类似的文章，请见[现代化系统重装教程](https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/)。
 
 ## 前置工作
 
