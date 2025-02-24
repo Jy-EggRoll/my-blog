@@ -7,7 +7,11 @@ image: woa.png
 categories:
     - 技术
 tags:
-    -
+    - WoA
+    - Windows
+    - 系统
+    - 重装
+    - 教程
 weight: 1
 ---
 

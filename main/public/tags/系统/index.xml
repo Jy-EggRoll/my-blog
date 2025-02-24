@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>系统 on 蛋卷儿的博客</title>
+        <link>https://eggroll.pages.dev/tags/%E7%B3%BB%E7%BB%9F/</link>
+        <description>Recent content in 系统 on 蛋卷儿的博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>蛋卷儿</copyright>
+        <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows on ARM 系统重装指南</title>
+        <link>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</link>
+        <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/woa.png" alt="Featured image of post Windows on ARM 系统重装指南" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+&lt;/h2&gt;&lt;p&gt;在 2025 年 2 月 14 日，我第一次通过 PE 的方式完成了 Windows on ARM 的重装，写一篇文章分享一下我的心得。&lt;/p&gt;
+&lt;p&gt;之前写过一篇类似的文章，请见&lt;a class=&#34;link&#34; href=&#34;https://eggroll.pages.dev/p/%E7%8E%B0%E4%BB%A3%E5%8C%96%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%95%99%E7%A8%8B/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;现代化系统重装教程&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;前置工作&#34;&gt;前置工作
+&lt;/h2&gt;&lt;p&gt;必须先备份设备的驱动。ARM 设备的驱动比较罕见，完全不带驱动重装系统极有可能出现严重问题。建议使用 Dism++。系统内和 PE 内进行驱动备份工作都是可以的。建议在系统内备份驱动，系统损坏到无法启动再考虑使用 PE 备份驱动。&lt;/p&gt;
+&lt;h2 id=&#34;使用的-pe&#34;&gt;使用的 PE
+&lt;/h2&gt;&lt;p&gt;我使用的是：&lt;a class=&#34;link&#34; href=&#34;https://bydjpe.winos.me/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CDBYDJ PE&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE.png&#34;
+	width=&#34;3470&#34;
+	height=&#34;1908&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE_hu_5ee20dcc437cde40.png 480w, https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/PE_hu_284613d986fa8e98.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;436px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;感谢作者的付出，这也许是目前网络上能找到的唯一一款兼容众多 ARM 电脑的 PE。&lt;/p&gt;
+&lt;h2 id=&#34;下载最新镜像&#34;&gt;下载最新镜像
+&lt;/h2&gt;&lt;p&gt;推荐网址：&lt;a class=&#34;link&#34; href=&#34;https://worproject.com/esd&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://worproject.com/esd&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;选择最新 ARM 镜像下载。&lt;/p&gt;
+&lt;h2 id=&#34;写入后导入备份好的全部驱动&#34;&gt;写入后导入备份好的全部驱动
+&lt;/h2&gt;&lt;p&gt;这点和常规的 PE 内安装系统的步骤是一致的，大家自行选择喜欢的方法。&lt;/p&gt;
+&lt;p&gt;安装完成后，使用 Dism++ 向目标系统导入备份好的全套驱动。&lt;/p&gt;
+&lt;p&gt;重启。&lt;/p&gt;
+&lt;p&gt;自此，就完成了 ARM 系统的重装。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

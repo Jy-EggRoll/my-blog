@@ -7,7 +7,32 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Fri, 07 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo_博客如何自定义置顶文章</title>
+        <link>https://eggroll.pages.dev/p/hugo_%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/hugo_%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</guid>
+        <description>&lt;p&gt;方法非常简单，在 md 元数据中加入 &lt;code&gt;weight&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/hugo_%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA.png&#34;
+	width=&#34;1558&#34;
+	height=&#34;769&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/hugo_%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_b1a17b0d8cf1081b.png 480w, https://eggroll.pages.dev/p/hugo_%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_442f99d241f165ba.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;如图所示&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;486px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;理论上来说，&lt;code&gt;weight&lt;/code&gt; 越大，权重越大。目前尚未实践，日后更新此文章。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>用于博客自动构建的脚本</title>
         <link>https://eggroll.pages.dev/p/%E7%94%A8%E4%BA%8E%E5%8D%9A%E5%AE%A2%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%9A%84%E8%84%9A%E6%9C%AC/</link>
         <pubDate>Thu, 06 Feb 2025 00:00:00 +0000</pubDate>
