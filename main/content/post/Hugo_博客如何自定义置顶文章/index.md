@@ -1,5 +1,5 @@
 ---
-title: Hugo_博客如何自定义置顶文章
+title: Hugo 博客如何自定义置顶文章
 description: 
 date: 2025-02-24
 lastmod: 2025-02-24
