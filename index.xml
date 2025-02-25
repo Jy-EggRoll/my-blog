@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Mon, 24 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Windows on ARM 系统重装指南</title>
         <link>https://eggroll.pages.dev/p/windows-on-arm-%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%8C%87%E5%8D%97/</link>
         <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
@@ -49,37 +49,14 @@
 </description>
         </item>
         <item>
-        <title>Hugo 博客如何自定义置顶文章</title>
-        <link>https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</link>
-        <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</guid>
-        <description>&lt;p&gt;方法非常简单，在 md 元数据中加入 &lt;code&gt;weight&lt;/code&gt; 即可。&lt;/p&gt;
-&lt;p&gt;例如：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA.png&#34;
-	width=&#34;1558&#34;
-	height=&#34;769&#34;
-	srcset=&#34;https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_b1a17b0d8cf1081b.png 480w, https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_442f99d241f165ba.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;如图所示&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;202&#34;
-		data-flex-basis=&#34;486px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;理论上来说，&lt;code&gt;weight&lt;/code&gt; 越大，权重越大。目前尚未实践，日后更新此文章。&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>禁用现代待机下的网络连接</title>
         <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</link>
         <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</guid>
-        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png" alt="Featured image of post 禁用现代待机下的网络连接" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png" alt="Featured image of post 禁用现代待机下的网络连接" /&gt;&lt;h2 id=&#34;2025-02-25-更新&#34;&gt;2025-02-25 更新
+&lt;/h2&gt;&lt;p&gt;在禁用网络连接后，电脑再一次从睡眠中自动唤醒，原因仍未知。&lt;/p&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言
 &lt;/h2&gt;&lt;p&gt;我的电脑是 2023 年购入的轻薄本，完全弃用了传统的 S3 待机模式（写入到内存），而采用了 S0 现代待机。该模式并不好用，导致了许多 bug，包括但不限于蓝牙连接问题。我对其颇有微词。&lt;/p&gt;
 &lt;p&gt;写这篇文章，源于我的电脑在睡眠模式下，又毫无征兆地自启动了。遗憾的是，由于采用了 S0，许多经典的命令用起来是没有效果的。&lt;/p&gt;
 &lt;p&gt;举个例子，如果电脑是 S3，那么在 CMD 或者 PowerShell 下执行 &lt;code&gt;powercfg /lastwake&lt;/code&gt;，效果是读取电脑上一次被唤醒的原因。而在 S0 电脑上，效果如图：&lt;/p&gt;
@@ -160,6 +137,31 @@
 &lt;p&gt;直接进入注册表改属性的方法参考自 &lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/554361321&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.zhihu.com/question/554361321&lt;/a&gt;，该文章说明了阻止电脑由睡眠状态进入休眠状态的方法（如果电脑已经开启了休眠）。&lt;/p&gt;
 &lt;p&gt;同理，读者如果发现有一些在其他教程中提到，但自己电脑上并没有的电源设置，多半是因为微软隐藏了。读者大可以触类旁通，搜索注册表中那些字符串，然后根据属性开启。这也是为什么我没有直接采用第一篇博文写入注册表的方法。经历两次类似的情况，我意识到此问题可以是一个系列，欢迎读者参考。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo 博客如何自定义置顶文章</title>
+        <link>https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</link>
+        <pubDate>Mon, 24 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/</guid>
+        <description>&lt;p&gt;方法非常简单，在 md 元数据中加入 &lt;code&gt;weight&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA.png&#34;
+	width=&#34;1558&#34;
+	height=&#34;769&#34;
+	srcset=&#34;https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_b1a17b0d8cf1081b.png 480w, https://eggroll.pages.dev/p/hugo-%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0/%E6%BC%94%E7%A4%BA_hu_442f99d241f165ba.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;如图所示&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;486px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;理论上来说，&lt;code&gt;weight&lt;/code&gt; 越大，权重越大。目前尚未实践，日后更新此文章。&lt;/p&gt;
 </description>
         </item>
         <item>

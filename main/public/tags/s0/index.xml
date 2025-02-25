@@ -7,13 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Sat, 22 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/s0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 25 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/s0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>禁用现代待机下的网络连接</title>
         <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</link>
         <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
         
         <guid>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/</guid>
-        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png" alt="Featured image of post 禁用现代待机下的网络连接" /&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+        <description>&lt;img src="https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E7%8E%B0%E4%BB%A3%E5%BE%85%E6%9C%BA%E4%B8%8B%E7%9A%84%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5/%E7%8A%B6%E6%80%81.png" alt="Featured image of post 禁用现代待机下的网络连接" /&gt;&lt;h2 id=&#34;2025-02-25-更新&#34;&gt;2025-02-25 更新
+&lt;/h2&gt;&lt;p&gt;在禁用网络连接后，电脑再一次从睡眠中自动唤醒，原因仍未知。&lt;/p&gt;
+&lt;h2 id=&#34;引言&#34;&gt;引言
 &lt;/h2&gt;&lt;p&gt;我的电脑是 2023 年购入的轻薄本，完全弃用了传统的 S3 待机模式（写入到内存），而采用了 S0 现代待机。该模式并不好用，导致了许多 bug，包括但不限于蓝牙连接问题。我对其颇有微词。&lt;/p&gt;
 &lt;p&gt;写这篇文章，源于我的电脑在睡眠模式下，又毫无征兆地自启动了。遗憾的是，由于采用了 S0，许多经典的命令用起来是没有效果的。&lt;/p&gt;
 &lt;p&gt;举个例子，如果电脑是 S3，那么在 CMD 或者 PowerShell 下执行 &lt;code&gt;powercfg /lastwake&lt;/code&gt;，效果是读取电脑上一次被唤醒的原因。而在 S0 电脑上，效果如图：&lt;/p&gt;
