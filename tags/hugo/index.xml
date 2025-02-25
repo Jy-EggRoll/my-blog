@@ -29,7 +29,8 @@
 		data-flex-basis=&#34;486px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;理论上来说，&lt;code&gt;weight&lt;/code&gt; 越大，权重越大。目前尚未实践，日后更新此文章。&lt;/p&gt;
+&lt;p&gt;经测试，权重越小，在展示上就越靠前。似乎有封面图文章和无封面图文章分属两套排序逻辑，有封面图文章优先于无封面图文章。&lt;/p&gt;
+&lt;p&gt;鉴于网页第一页展示的文章数量本来就有限，置顶还是少一些吧。哪篇想置顶，就用 &lt;code&gt;1&lt;/code&gt; 来表示。&lt;/p&gt;
 </description>
         </item>
         <item>
