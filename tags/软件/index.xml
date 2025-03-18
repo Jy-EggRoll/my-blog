@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>蛋卷儿</copyright>
-        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://eggroll.pages.dev/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>禁用手机连接的自启动</title>
         <link>https://eggroll.pages.dev/p/%E7%A6%81%E7%94%A8%E6%89%8B%E6%9C%BA%E8%BF%9E%E6%8E%A5%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8/</link>
         <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
@@ -84,11 +84,11 @@
 </description>
         </item>
         <item>
-        <title>Sunshine 入门</title>
-        <link>https://eggroll.pages.dev/p/sunshine-%E5%85%A5%E9%97%A8/</link>
+        <title>串流入门</title>
+        <link>https://eggroll.pages.dev/p/%E4%B8%B2%E6%B5%81%E5%85%A5%E9%97%A8/</link>
         <pubDate>Tue, 10 Dec 2024 00:00:00 +0000</pubDate>
         
-        <guid>https://eggroll.pages.dev/p/sunshine-%E5%85%A5%E9%97%A8/</guid>
+        <guid>https://eggroll.pages.dev/p/%E4%B8%B2%E6%B5%81%E5%85%A5%E9%97%A8/</guid>
         <description>&lt;h2 id=&#34;sunshine-介绍&#34;&gt;Sunshine 介绍
 &lt;/h2&gt;&lt;p&gt;Sunshine 是一款用于串流的软件，可以理解为发送端。&lt;/p&gt;
 &lt;h3 id=&#34;校园网串流部署&#34;&gt;校园网串流部署
@@ -122,7 +122,7 @@
 &lt;/h2&gt;&lt;p&gt;Moonlight 可以视为对 Sunshine 数据的接收端。&lt;/p&gt;
 &lt;h3 id=&#34;windows-端-moonlight-常用快捷键&#34;&gt;Windows 端 Moonlight 常用快捷键
 &lt;/h3&gt;&lt;p&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;Q&lt;/kbd&gt; 用于在串流后结束串流。&lt;/p&gt;
-&lt;p&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;E&lt;/kbd&gt; 用于决定显示模式为全屏还是窗口化，如果 Moonlight 启动后，Windows 的状态栏没有正常隐藏，该快捷键将会有助于解决此问题。&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;Alt&lt;/kbd&gt; + &lt;kbd&gt;X&lt;/kbd&gt; 用于决定显示模式为全屏还是窗口化，如果 Moonlight 启动后，Windows 的状态栏没有正常隐藏，该快捷键将会有助于解决此问题。&lt;/p&gt;
 </description>
         </item>
         
