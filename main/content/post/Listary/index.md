@@ -1,5 +1,5 @@
 ---
-title: Listary
+title: Listary 推荐 | Recommendation of Listary
 description: 
 date: 2025-04-04
 lastmod: 2025-04-04
@@ -9,8 +9,11 @@ categories:
 tags:
     - Listary
     - 软件
+    - Software
     - 搜索
+    - Search
     - 文件管理
+    - File manager
 weight: 
 ---
 
