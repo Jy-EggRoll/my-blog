@@ -34,5 +34,5 @@ These are the reasons I deleted the 1.4 version and now only use 1.5.
 Everything has a powerful search syntax, and the built-in filters do not meet my needs. So, I wrote my own filter, and I'll share it below (you can ues it).
 
 ```text
-ext:code-workspace;exe;lnk;zip;7z;rar;png;jpg;jpeg;pdf;doc;docx;exl;exls;ppt;pptx;txt;ini;mp3;wav;mp4|folder:<#param:> pinyin:<#param:>
+ext:code-workspace;exe;lnk;zip;7z;rar;png;jpg;jpeg;pdf;doc;docx;xls;xlsx;ppt;pptx;txt;ini;mp3;wav;mp4|folder:<#param:> pinyin:<#param:>
 ```
