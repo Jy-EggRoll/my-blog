@@ -2,7 +2,7 @@
 title: 用于博客自动构建的脚本
 description: Bash 脚本，仅有参考价值
 date: 2025-02-06
-lastmod: 2025-02-07
+lastmod: 2025-04-05
 image: 
 categories:
     - 技术
@@ -11,6 +11,10 @@ tags:
     - bash
     - 脚本
 ---
+
+## 最新说明
+
+目前，作者的主力 Shell 已经变为 PowerShell，此文章的内容不再维护。
 
 ## 说明
 
