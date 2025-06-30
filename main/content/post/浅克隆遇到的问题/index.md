@@ -24,3 +24,23 @@ The actual command is similar to:
 ```powershell
 git clone --depth 1 --no-single-branch <repository-url>
 ```
+
+`Git` 的官方文档表述如下：
+
+The official documentation of `Git` states:
+
+> `--depth <depth>`
+>
+> Create a shallow clone with a history truncated to the specified number of commits. Implies `--single-branch` unless `--no-single-branch` is given to fetch the histories near the tips of all branches. If you want to clone submodules shallowly, also pass `--shallow-submodules`.
+>
+> `--no-single-branch`
+>
+> 创建一个浅克隆，保留特定数量的提交历史。默认情况下，会使用 `--single-branch`，除非使用 `--no-single-branch` 参数来获取所有分支的历史记录。如果你想要浅克隆子模块，也需要传递 `--shallow-submodules`。
+
+如此，更加成熟的命令是：
+
+So the more mature command is:
+
+```powershell
+git clone --depth 1 --no-single-branch --shallow-submodules <repository-url>
+```
