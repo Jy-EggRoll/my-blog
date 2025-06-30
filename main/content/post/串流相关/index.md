@@ -1,15 +1,17 @@
 ---
 title: 串流入门 | Getting started with Streaming
 date: 2024-12-10
-lastmod: 2025-03-19
+lastmod: 2025-06-27
 image: 
 categories:
     - 技术
 tags:
     - 串流
     - 软件
-    - Streaming
-    - Software
+    - streaming
+    - software
+    - sunshine
+    - moonlight
 ---
 
 ## Sunshine 介绍 | Introduction to Sunshine
@@ -58,4 +60,8 @@ We can take Moonlight a reciever of Sunshine.
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> 用于在串流后结束串流。
 
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> is used to end the streaming after you start it.
+
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd> 用于决定显示模式为全屏还是窗口化，如果 Moonlight 启动后，Windows 的状态栏没有正常隐藏，该快捷键将会有助于解决此问题。
+
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd> is used to toggle the display mode between fullscreen and windowed. If the Windows taskbar is not hidden properly after starting Moonlight, this shortcut can help resolve the issue.
