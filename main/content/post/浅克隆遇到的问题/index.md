@@ -42,5 +42,5 @@ The official documentation of `Git` states:
 So the more mature command is:
 
 ```powershell
-git clone --depth 1 --no-single-branch --shallow-submodules <repository-url>
+git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules <repository-url>
 ```
