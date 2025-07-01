@@ -3,7 +3,7 @@ title: Git 浅克隆遇到的问题以及解决方案
 description:
 date: 2025-06-27
 lastmod: 2025-06-27
-image:
+image: 终端.png
 categories:
     - 技术
 tags:
@@ -11,6 +11,7 @@ tags:
     - 浅克隆
     - shallow clone
     - command
+weight: 1
 ---
 
 最近在浅克隆的时候发现了一个问题，那就是默认只克隆 main 分支，而不会克隆其他分支，这为我引入了额外的工作量。好在，经过对各种资料的查阅，我找到了一个解决方案，即加上 `--no-single-branch` 参数。
