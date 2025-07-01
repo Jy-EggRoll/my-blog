@@ -2,7 +2,7 @@
 title: 用于博客自动构建的脚本 | A Script for Automatic Blog Build
 description: Bash 脚本，仅有参考价值 | Bash script, for reference only
 date: 2025-02-06
-lastmod: 2025-06-027
+lastmod: 2025-06-27
 image:
 categories:
     - 技术
