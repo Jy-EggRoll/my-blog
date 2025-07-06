@@ -1,8 +1,8 @@
 ---
-title: Git 浅克隆遇到的问题以及解决方案
+title: Git 浅克隆遇到的问题以及解决方案 | Git Shallow Clone Issues and Solutions
 description:
 date: 2025-06-27
-lastmod: 2025-06-27
+lastmod: 2025-07-06
 image: 终端.png
 categories:
     - 技术
@@ -34,7 +34,7 @@ The official documentation of `Git` states:
 >
 > Create a shallow clone with a history truncated to the specified number of commits. Implies `--single-branch` unless `--no-single-branch` is given to fetch the histories near the tips of all branches. If you want to clone submodules shallowly, also pass `--shallow-submodules`.
 >
-> `--no-single-branch`
+> `--depth <depth>`
 >
 > 创建一个浅克隆，保留特定数量的提交历史。默认情况下，会使用 `--single-branch`，除非使用 `--no-single-branch` 参数来获取所有分支的历史记录。如果你想要浅克隆子模块，也需要传递 `--shallow-submodules`。
 
