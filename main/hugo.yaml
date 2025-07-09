@@ -2,7 +2,7 @@ baseurl: https://eggroll.pages.dev/
 languageCode: zh-cn
 theme: hugo-theme-stack
 title: 蛋卷儿的博客
-copyright: 蛋卷儿
+copyright: 蛋卷儿 | EggRoll
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw

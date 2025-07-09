@@ -2,7 +2,7 @@
 title: 关于
 description: 
 date: 2025-02-06
-lastmod: 2025-02-06
+lastmod: 2025-07-09
 image: desk.jpg
 menu:
     main: 
@@ -11,11 +11,15 @@ menu:
             icon: user
 ---
 
-## 关于作者
+## 关于作者 | About the Author
 
 你好，我是蛋卷儿！目前就读于北京邮电大学计算机学院，数据科学与大数据技术专业。
 
+Hello, I am EggRoll! I am currently studying at the School of Computer Science, Beijing University of Posts and Telecommunications, majoring in Data Science and Big Data Technology.
+
 我热爱学习我感兴趣的新知识，最近我在学习计算机基础、前端开发等技术。
+
+I love learning new knowledge that interests me, and recently I have been studying computer fundamentals, front-end development, and other technologies.
 
 我喜欢音乐、动漫，整体来看，我热爱技术和艺术。
 

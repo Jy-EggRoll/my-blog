@@ -1,14 +1,6 @@
 ---
 title: 链接
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
 menu:
     main: 
         weight: -50
@@ -18,16 +10,6 @@ menu:
 comments: false
 ---
 
-链接特性待完善。
+暂无链接。如果您希望链接到本站，请联系 <JyEggRoll@outlook.com>，如果您愿意在您的网页上也链接到本站，我将十分感激！
 
-```yaml
-links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
+There are no links yet. If you would like to link to this site, please contact <JyEggRoll@outlook.com>. If you would like to link to this site from your own webpage, I would greatly appreciate it!
