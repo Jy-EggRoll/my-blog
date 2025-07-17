@@ -1,5 +1,5 @@
 ---
-title: Everything 推荐 | Recommend Everything
+title: Everything 推荐 | Recommendation of Everything
 description: 一款强大的文件搜索工具 | A powerful file search tool
 date: 2025-03-21
 lastmod: 2025-07-09

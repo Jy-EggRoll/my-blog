@@ -1,20 +1,19 @@
 ---
-title: Git 浅克隆遇到的问题以及解决方案 | Git Shallow Clone Issues and Solutions
+title: Git 个人使用指南
 description:
 date: 2025-06-27
-lastmod: 2025-07-09
+lastmod: 2025-07-17
 image: 终端.png
 categories:
     - 技术
 tags:
     - git
     - 浅克隆
-    - shallow clone
-    - command
+    - 命令行
 weight: 1
 ---
 
-## 说明 | Introduction
+## 浅克隆的问题
 
 最近在浅克隆的时候发现了一个问题，那就是默认只克隆 `main` 分支，而不会克隆其他分支，这为我引入了额外的工作量。好在，查阅 Git 官方文档，我找到了一个解决方案，即加上 `--no-single-branch` 参数。
 
