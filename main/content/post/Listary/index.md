@@ -1,26 +1,27 @@
 ---
-title: Listary 推荐 | Recommendation of Listary
+title: Listary 推荐
 description: 
 date: 2025-04-04
-lastmod: 2025-07-17
+lastmod: 2025-07-18
 image: 
 categories:
     - 技术
 tags:
     - Listary
     - 软件
-    - Software
     - 搜索
-    - Search
     - 文件管理
-    - File manager
 weight: 
 ---
 
+## 官网
+
 Listaty 的网址为：<https://www.listary.com/>
 
-The website of Listary is: <https://www.listary.com/>
+## 特色介绍
 
-目前已经基本把 Everything 闲置下来了，重归了 Listaty 的怀抱。Listary 有一些我魂牵梦绕的功能，这是其他任何搜索软件都替代不了的。其中，最瞩目的一个就是在打开文件的窗口进行快速搜索或者快速跳转，真乃神级功能也。
+Listary 的标准功能是快捷打开软件、文件搜索。这两个功能都可以用双击 <kbd>Ctrl</kbd> 来快速触发，算得上是很便利的默认快捷键。
 
-Currently, I have almost completely replaced Everything with Listary. Listary has some features that I can't live without, which no other search software can replace. The most notable one is the ability to quickly search or jump to files in open file dialogs, which is truly a god-level feature.
+然而，实际把我捆绑到 Listary 的，并非上述功能，而是其文件快速跳转的功能。
+
+[TODO]
