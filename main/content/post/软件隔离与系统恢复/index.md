@@ -1,13 +1,17 @@
 ---
-title: 
-description: 
+title: 软件隔离与系统恢复
+description: 本文主要介绍两种软件隔离与系统恢复的工具：Sandboxie Plus 和 Deep Freeze，以及它们在系统操作中的应用
 date: 2025-07-22
 lastmod: 2025-07-22
 image: 
 categories:
-    - 
+    - 技术
 tags:
-    - 
+    - Sandboxie
+    - Deep Freeze
+    - 虚拟机
+    - 隔离
+    - 恢复
 weight: 
 ---
 
