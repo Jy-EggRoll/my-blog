@@ -14,7 +14,7 @@ weight:
 
 ## 引言
 
-之前的文章有提到过内容农场的问题，之后学习了很多屏蔽方法。其中，自定义性最强的就是使用广告屏蔽插件的自定义规则。我偏好使用 AdGuard，在此文中，我将维护一个屏蔽列表，并不断更新。
+之前的文章有提到过内容农场的问题，在许多屏蔽方法中，自定义性最强的就是使用广告屏蔽插件的自定义规则。我偏好使用 AdGuard，在此文中，我将维护一个 AdGuard 屏蔽列表，并不断更新。
 
 ## 列表
 
@@ -49,6 +49,7 @@ bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cit
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(runoob.com):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(nodeapp.cn):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(w3cschool.cn):upward(6)
+bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(cloud.tencent.com):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text():upward(6)
 ```
 
@@ -60,10 +61,8 @@ bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cit
 4. 将以上内容复制下来，粘贴到“用户过滤器”中
 5. 点击“保存”
 
-刷新网页后，您将可以看到内容农场被完全屏蔽了。唯一缺点是，搜索页上的展示数量会大大减少，有时会看到“没有结果”的尴尬局面。
+刷新网页后，您将可以看到内容农场被完全屏蔽了。唯一缺点是，搜索页上的展示数量会大大减少，有时会看到没有结果的尴尬局面。不过，在我看来，如果真的出现了这种情况，恐怕就要考虑换个问法，甚至换个搜索引擎了。
 
 ## 自定义
 
-如果您有其他内容农场需要屏蔽，可以在上述规则的基础上进行修改。AdGuard 的规则语法非常灵活，您可以根据需要添加或删除规则。
-
-此部分日后再完善。
+如果您有其他内容农场需要屏蔽，可以在上述规则的基础上进行修改。AdGuard 的规则语法非常灵活，您可以根据需要添加或删除规则。此部分可以出一个教程，日后再完善。
