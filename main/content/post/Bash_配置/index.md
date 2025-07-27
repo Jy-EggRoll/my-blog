@@ -1,8 +1,8 @@
 ---
-title: Git Bash 配置 | Configuration of Git Bash
+title: Bash 配置
 description: 
 date: 2025-02-21
-lastmod: 2025-03-25
+lastmod: 2025-07-27
 image: bash.png
 categories:
     - 技术
@@ -11,11 +11,9 @@ tags:
     - PowerShell
 ---
 
-## 注意 | Note
+## 注意
 
-作者已经放弃在 Windows 上使用 `Git Bash`，转而使用更加强大的 `PowerShell`，本文将长期不再维护与更新。
-
-The author no longer uses `Git Bash` on Windows and has switched to a more powerful `PowerShell`. This article will no longer be maintained or updated in the long term.
+作者已经放弃在 Windows 上使用 Git Bash，转而使用更加强大的 PowerShell，本文将长期不再维护与更新。在 Linux 上，我主要使用 zsh，故此文暂且完结。
 
 ---
 
