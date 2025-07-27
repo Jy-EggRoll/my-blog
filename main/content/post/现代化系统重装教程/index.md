@@ -3,7 +3,7 @@ title: 现代化系统重装教程
 description: 个人向系统重装完全指南，仅具有参考价值
 date: 2025-02-09
 lastmod: 2025-07-22
-image: keyboard.jpg
+image: 键盘.jpg
 categories:
     - 技术
 tags:

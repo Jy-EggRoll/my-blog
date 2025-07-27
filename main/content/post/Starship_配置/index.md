@@ -3,7 +3,7 @@ title: Starship 配置
 description: 
 date: 2025-07-26
 lastmod: 2025-07-26
-image: 
+image: 截图.png
 categories:
     - 技术
 tags:
@@ -23,7 +23,7 @@ Starship 是一个跨平台的命令行提示符，由 Rust 编写，旨在提�
 Starship 的默认配置文件位于 `~/.config/starship.toml`。以下是一个示例配置文件，使用了 Catppuccin Mocha 调色板，并包含了各种模块的配置。此配置是我将预设配置深度修改后版本。
 
 ```toml
-"$schema" = '<https://starship.rs/config-schema.json>'
+"$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
 [](red)\
@@ -48,7 +48,7 @@ $python\
 $battery\
 [](fg:sapphire bg:lavender)\
 $time\
-[](fg:lavender)\
+[ ](fg:lavender)\
 $cmd_duration\
 $line_break\
 $character"""
@@ -108,6 +108,8 @@ format = '[[ $symbol $branch ](fg:crust bg:yellow)]($style)'
 deleted = " "
 modified = " "
 untracked = " "
+ahead = " ⇡"
+behind = " ⇣"
 style = "bg:yellow"
 format = '[[($all_status$ahead_behind )](fg:crust bg:yellow)]($style)'
 
@@ -163,7 +165,7 @@ format = '[[ $symbol( $context) ](fg:crust bg:blue)]($style)'
 
 [battery]
 full_symbol = ""
-charging_symbol = ""
+charging_symbol = ""
 discharging_symbol = ""
 format = '[[ $symbol $percentage ](fg:crust bg:sapphire)]($style)'
 
@@ -181,12 +183,12 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[ ](bold fg:green)'
-error_symbol = '[ ](bold fg:red)'
-vimcmd_symbol = '[ ](bold fg:green)'
-vimcmd_replace_one_symbol = '[ ](bold fg:lavender)'
-vimcmd_replace_symbol = '[ ](bold fg:lavender)'
-vimcmd_visual_symbol = '[ ](bold fg:yellow)'
+success_symbol = '[ ](bold fg:green)'
+error_symbol = '[ ](bold fg:red)'
+vimcmd_symbol = '[ ](bold fg:green)'
+vimcmd_replace_one_symbol = '[ ](bold fg:lavender)'
+vimcmd_replace_symbol = '[ ](bold fg:lavender)'
+vimcmd_visual_symbol = '[ ](bold fg:yellow)'
 
 [cmd_duration]
 show_milliseconds = true
@@ -307,4 +309,5 @@ surface0 = "#363a4f"
 base = "#24273a"
 mantle = "#1e2030"
 crust = "#181926"
+
 ```

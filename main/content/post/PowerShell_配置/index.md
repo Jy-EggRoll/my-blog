@@ -3,7 +3,7 @@ title: PowerShell 配置
 description: 
 date: 2025-07-26
 lastmod: 2025-07-26
-image: 
+image: 截图.png
 categories:
     - 技术
 tags:
@@ -105,7 +105,24 @@ weight:
 
 ### `$PROFILE` 配置
 
+本配置实现了 Windows 下亮色暗色主题的自动切换。
+
 ```ps1
+Import-Module Catppuccin
+
+# 读取注册表中的主题设置
+$themeMode = Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" | Select-Object -ExpandProperty AppsUseLightTheme
+
+# 转换为易读的状态描述
+if ($themeMode -eq 1) {
+    # "当前系统主题为：亮色模式"
+    $Flavor = $Catppuccin['Latte']
+} else {
+    # "当前系统主题为：暗色模式"
+    $Flavor = $Catppuccin['Frappe']
+}
+$PSStyle.FileInfo.Directory = $Flavor.Maroon.Foreground()
+
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Invoke-Expression (&starship init powershell)

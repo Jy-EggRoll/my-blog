@@ -1,5 +1,5 @@
 ---
-title: 串流入门 | Getting started with Streaming
+title: 串流教程
 date: 2024-12-10
 lastmod: 2025-06-27
 image: 
@@ -8,17 +8,17 @@ categories:
 tags:
     - 串流
     - 软件
-    - streaming
-    - software
     - sunshine
     - moonlight
 ---
 
-## Sunshine 介绍 | Introduction to Sunshine
+## 引言
+
+串流是指将数据从一个地方传输到另一个地方的过程。在计算机领域，串流通常指的是将音频、视频或其他数据从服务器传输到客户端的过程。本文将介绍如何在校园网环境下使用 Sunshine 和 Moonlight 进行串流。
+
+## Sunshine 介绍
 
 Sunshine 是一款用于串流的软件，可以理解为发送端。
-
-Sunshine is a software for streaming, we can think it a software that push data.
 
 ### 校园网串流部署 | How to use it in School Net
 
