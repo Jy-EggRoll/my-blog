@@ -1,9 +1,9 @@
 ---
 title: PowerShell 配置
-description: 
+description: 适用于 Windows Terminal
 date: 2025-07-26
 lastmod: 2025-07-26
-image: 截图.png
+image: 
 categories:
     - 技术
 tags:
@@ -15,11 +15,11 @@ weight:
 
 ## 引言
 
-本文适用于 PowerShell7。
+Windows Terminal 是一个现代化的终端应用程序，支持多种命令行工具和 shell，包括 PowerShell。通过对 PowerShell 的配置，可以提升使用体验，使其更符合个人喜好。
 
 ## 我的配置
 
-### 颜色与主题
+### 终端颜色与主题
 
 颜色与主题在 `settings.json` 中配置。鉴于 PowerShell 的配置比较复杂，我不会直接给出完整的配置文件，而是提供一些关键的配置片段。
 
@@ -103,7 +103,7 @@ weight:
     "theme": "system",
 ```
 
-### `$PROFILE` 配置
+### Power Shell `$PROFILE` 配置
 
 本配置实现了 Windows 下亮色暗色主题的自动切换。
 

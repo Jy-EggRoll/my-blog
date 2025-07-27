@@ -3,7 +3,7 @@ title: Starship 配置
 description: 
 date: 2025-07-26
 lastmod: 2025-07-26
-image: 截图.png
+image: 
 categories:
     - 技术
 tags:
