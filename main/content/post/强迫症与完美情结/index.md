@@ -1,6 +1,6 @@
 ---
-title: 
-description: 强迫症与完美情结
+title: 强迫症与完美情结
+description: 
 date: 2025-07-30
 lastmod: 2025-07-30
 image: 
