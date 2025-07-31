@@ -2,7 +2,7 @@
 title: Starship 配置
 description: 
 date: 2025-07-26
-lastmod: 2025-07-26
+lastmod: 2025-07-31
 image: 
 categories:
     - 技术
@@ -167,6 +167,7 @@ format = '[[ $symbol( $context) ](fg:crust bg:blue)]($style)'
 full_symbol = ""
 charging_symbol = ""
 discharging_symbol = ""
+unknown_symbol = ""
 format = '[[ $symbol $percentage ](fg:crust bg:sapphire)]($style)'
 
 [[battery.display]]
