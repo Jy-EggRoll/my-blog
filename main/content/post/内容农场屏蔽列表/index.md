@@ -51,6 +51,7 @@ bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cit
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(w3cschool.cn):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(cloud.tencent.com):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text():upward(6)
+bilibili.com###i_cecream > div.adblock-tips:nth-child(2)
 ```
 
 ## 使用方法
