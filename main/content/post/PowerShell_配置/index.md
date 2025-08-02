@@ -2,7 +2,7 @@
 title: PowerShell 配置
 description: 适用于 Windows Terminal
 date: 2025-07-26
-lastmod: 2025-07-26
+lastmod: 2025-07-31
 image: 
 categories:
     - 技术
@@ -21,34 +21,17 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
 
 ### 终端颜色与主题
 
-颜色与主题在 `settings.json` 中配置。鉴于 PowerShell 的配置比较复杂，我不会直接给出完整的配置文件，而是提供一些关键的配置片段。
-
-- 以最大化窗口启动（一级配置）
+- 主题（放入 profiles 下的 defaults）
 
 ```json
-    "launchMode": "maximized",
+"colorScheme": 
+{
+    "dark": "Catppuccin Frappe",
+    "light": "Catppuccin Latte"
+},
 ```
 
-- 主题（一级配置 profiles 下的配置）
-
-```json
-        "defaults": 
-        {
-            "adjustIndistinguishableColors": "indexed",
-            "colorScheme": 
-            {
-                "dark": "Catppuccin Frappe",
-                "light": "Catppuccin Latte"
-            },
-            "experimental.rightClickContextMenu": true,
-            "font": 
-            {
-                "face": "Maple Mono Normal NL NF"
-            }
-        },
-```
-
-- 配色方案与主题跟随系统（一级配置）
+- 配色方案与主题跟随系统
 
 ```json
 "schemes": 
@@ -100,31 +83,13 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
             "yellow": "#DF8E1D"
         }
     ],
-    "theme": "system",
 ```
 
-### Power Shell `$PROFILE` 配置
-
-本配置实现了 Windows 下亮色暗色主题的自动切换。
+### PowerShell `$PROFILE` 配置
 
 ```ps1
-Import-Module Catppuccin
-
-# 读取注册表中的主题设置
-$themeMode = Get-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize" | Select-Object -ExpandProperty AppsUseLightTheme
-
-# 转换为易读的状态描述
-if ($themeMode -eq 1) {
-    # "当前系统主题为：亮色模式"
-    $Flavor = $Catppuccin['Latte']
-} else {
-    # "当前系统主题为：暗色模式"
-    $Flavor = $Catppuccin['Frappe']
-}
-$PSStyle.FileInfo.Directory = $Flavor.Maroon.Foreground()
-
+$PSStyle.FileInfo.Directory = $PSStyle.Foreground.Blue
 Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 Invoke-Expression (&starship init powershell)
-
 ```
