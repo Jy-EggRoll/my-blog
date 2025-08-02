@@ -21,20 +21,17 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
 
 ### 终端颜色与主题
 
-- 主题（一级配置 profiles 下的配置）
+- 主题（放入 profiles 下的 defaults）
 
 ```json
-        "defaults": 
-        {
-            "colorScheme": 
-            {
-                "dark": "Catppuccin Frappe",
-                "light": "Catppuccin Latte"
-            },
-        },
+"colorScheme": 
+{
+    "dark": "Catppuccin Frappe",
+    "light": "Catppuccin Latte"
+},
 ```
 
-- 配色方案与主题跟随系统（一级配置）
+- 配色方案与主题跟随系统
 
 ```json
 "schemes": 
