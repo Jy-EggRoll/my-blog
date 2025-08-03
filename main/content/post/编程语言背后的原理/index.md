@@ -5,7 +5,7 @@ date: 2025-08-03
 lastmod: 2025-08-03
 image: 
 categories:
-    - 
+    - 杂谈
 tags:
     - 
 weight: 
