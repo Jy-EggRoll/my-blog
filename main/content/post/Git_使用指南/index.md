@@ -98,9 +98,7 @@ git checkout <branch-name>
 
 我深表赞同。
 
-本博客初心不改，我们来看看如何解决这个问题。
-
-先放答案，我的配置是：
+本博客初心不改，我们来看看如何解决这个问题。我的配置是：
 
 ```shell
 git config --global proxy.http localhost:10808
@@ -108,4 +106,4 @@ git config --global proxy.http localhost:10808
 
 对于此选项的分析，我更愿意留到之后做系统梳理，今天先写到这里。
 
-读者只需要知道，`localhost` 代表一个特定的本机地址，而 10808 是如 Clash、V2RayN 等软件使用的 HTTP 端口或混合端口。
+读者只需要知道，`localhost` 代表一个特定的本机地址，而 10808 是如 Clash、V2RayN 等软件使用的 HTTP 端口或混合端口，需要自行根据实际情况修改。
