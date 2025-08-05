@@ -1,8 +1,8 @@
 ---
-title: PowerShell 配置
-description: 适用于 Windows Terminal
+title: PowerShell 使用指南
+description: 主环境为 Windows Terminal
 date: 2025-07-26
-lastmod: 2025-07-31
+lastmod: 2025-08-05
 image: 
 categories:
     - 技术
@@ -19,7 +19,7 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
 
 ## 我的配置
 
-### 终端颜色与主题
+### Windows Terminal 颜色与主题
 
 - 主题（放入 profiles 下的 defaults）
 
@@ -31,7 +31,7 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
 },
 ```
 
-- 配色方案与主题跟随系统
+- 配色方案
 
 ```json
 "schemes": 
@@ -87,9 +87,6 @@ Windows Terminal 是一个现代化的终端应用程序，支持多种命令行
 
 ### PowerShell `$PROFILE` 配置
 
-```ps1
-$PSStyle.FileInfo.Directory = $PSStyle.Foreground.Blue
-Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
-Invoke-Expression (&starship init powershell)
-```
+由终端调用的 PowerShell 和在装了 PowerShell 扩展的 VS Code 中调用的 PowerShell 有所不同，初始化配置文件是不同的。您可以简单地在终端中输入 `$profile` 来获取当前 PowerShell 初始化配置文件的精确位置。值得注意的是，PowerShell 变量名不区分大小写，`$PROFILE`、`$Profile`、`$profile` 指向的文件路径都是一致的，只不过根据调用者的不同，可能是全局或 VS Code 专属的。
+
+我的配置文件正在开发中，有不少自己定义的功能，由于变动频繁，暂时不放出。
