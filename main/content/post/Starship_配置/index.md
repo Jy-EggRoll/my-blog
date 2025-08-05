@@ -2,7 +2,7 @@
 title: Starship 配置
 description: 
 date: 2025-07-26
-lastmod: 2025-07-31
+lastmod: 2025-08-05
 image: 
 categories:
     - 技术
@@ -87,13 +87,6 @@ format = "[ $path ]($style)"
 truncation_length = 3
 home_symbol = " "
 
-[directory.substitutions]
-"Documents" = "󰈙 "
-"Downloads" = " "
-"Music" = "󰝚 "
-"Pictures" = " "
-"Developer" = "󰲋 "
-
 [git_branch]
 symbol = ""
 style = "bg:yellow"
@@ -147,7 +140,7 @@ threshold = 100
 disabled = false
 time_format = "%R"
 style = "bg:lavender"
-format = '[[  $time ](fg:crust bg:lavender)]($style)'
+format = '[[   $time ](fg:crust bg:lavender)]($style)'
 
 [line_break]
 disabled = false
