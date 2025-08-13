@@ -45,11 +45,15 @@ WSL 在完全未安装时，可以通过 `wsl --install` 命令来安装。
 
 - `wsl`：启动默认的发行版
 - `wsl --help`：显示帮助信息
-- `wsl --list --online`：列出可供安装的发行版，在线获取。简写为 `wsl -l -o`
-- `wsl -list --verbose`：列出所有已安装的发行版及其状态，简写为 `wsl -l -v`
+- `wsl --list --online`：列出可供安装的发行版，在线获取，简写为 `wsl -l -o`
+- `wsl --install <NameofDistribution>`：安装某个特定的发行版
+- `wsl --install <NameofDistribution> --name <Name> --location <Path>`：指定名字和位置的安装
+- `wsl --list --verbose`：列出所有已安装的发行版及其状态，简写为 `wsl -l -v`
 - `wsl -set-default <NameofDistribution>`：设定默认的发行版，简写为 `wsl -s <NameofDistribution>`
 
-读者大可直接使用 `wsl --help`，wsl 的命令并不多，且该帮助是中文的，要比本文的参考性更强一些。相关的简写也完全列在帮助中。在撰写文章时，帮助菜单如下，供参考：
+读者大可直接使用 `wsl --help`，wsl 的命令并不多，且该帮助是中文的，要比本文的参考性更强一些。相关的简写也完全列在帮助中。
+
+不过，由于尚未发现 wsl 的帮助信息有完善的分页输出机制，每次运行 `wsl --help` 时，帮助信息都会快速滚动到底部，这不利于查阅。因此，我将输出信息复制一份，放入博客。在撰写文章时，帮助菜单如下，供参考：
 
 ```text
 用法: wsl.exe [Argument][Options...][CommandLine]
