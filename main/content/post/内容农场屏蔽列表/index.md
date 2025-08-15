@@ -64,6 +64,7 @@ bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cit
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(springx.fun):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(worktile.com):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(blog.rezo.fun):upward(6)
+bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text(vuepress.mirror.docker-practice.com):upward(6)
 bing.com#?##b_results > li > div.b_tpcn > a > div.tptxt > div.tpmeta > div > cite:has-text():upward(6)
 ```
 
