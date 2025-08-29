@@ -3,7 +3,7 @@ title: 项目介绍——tree-enhancer
 description: 
 date: 2025-08-29
 lastmod: 2025-08-29
-image: 封面图.png
+image: image.png
 categories:
     - 项目
 tags:
@@ -23,7 +23,7 @@ VS Code 扩展商店：搜索 Tree Enhancer
 
 一个增强 VS Code 资源管理器的扩展，在悬浮时显示文件和文件夹的详细信息，如大小、子文件数、子文件夹数等。
 
-![function_show](功能演示.gif)
+![功能演示](功能演示.gif)
 
 ## 重大升级
 
@@ -37,7 +37,7 @@ VS Code 扩展商店：搜索 Tree Enhancer
 
 - 当存在某些提示时，例如文件夹下的代码中有错误，这会导致文件夹提示“包含强调项”。该提示似乎有很高的优先级，会导致其他提示失效，包括 Git 状态和本扩展的提示。目前尚无法解决该问题。“包含强调项”被解决后，本扩展的提示将恢复正常。
 
-![known_issues](已知_bug.gif)
+![已知 bug](已知_bug.gif)
 
 - 高权限文件夹无法计算，这是预期之内的。
 - VS Code 的文件管理器似乎具有某种类似于缓存的机制，这有时会导致修改时间计算不准，这在 VS Code 自带的以“modified”排序文件的功能中似乎也存在，尚未定位问题的源头。
