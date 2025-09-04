@@ -2,7 +2,7 @@
 title: 项目介绍——my-keymap
 description: 
 date: 2025-08-14
-lastmod: 2025-08-31
+lastmod: 2025-09-04
 image: 
 categories:
     - 项目
@@ -147,7 +147,7 @@ weight:
 
 ### 活动窗口边框着色 AutoWindowColorBorder
 
-Windows 自带类似功能，可使其效果实在不能令人满意。对于第三方软件，更是常常出现失效的情况，比如微信就无法享受该效果。
+Windows 自带类似功能，其效果实在不能令人满意。对于第三方软件，更是常常出现失效的情况，比如微信就无法享受该效果。
 
 我使用 AHK 调用系统核心 API，实现了该效果，对第三方软件兼容性极佳，效果也很好。
 
