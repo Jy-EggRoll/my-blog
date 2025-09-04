@@ -35,6 +35,12 @@ weight:
 
 ## 自定义函数表
 
+> [!TIP]
+>
+> 若您在 GitHub 浏览此节，由于 GitHub 不支持自定义 CSS 的表格，为了更舒适的阅读体验，请跳转至我的博客查看函数表。文章剩余部分也是一致的，您可以直接继续浏览全文。
+
+<https://eggroll.pages.dev/p/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8Dmy-keymap/#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%E8%A1%A8>
+
 <table style="width: 100%; border-collapse: collapse; table-layout: fixed;">
   <thead>
     <tr>
@@ -73,31 +79,43 @@ weight:
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">AutoActivateWindow()</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">开关函数，未启动时调用则启动，已启动调用则停止，默认随 MyKeymap 启动</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">绑定一个快捷键方便随时启停</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">绑定一个快捷键或一个指令，方便随时启停</td>
     </tr>
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">IncBrightness(dealt)</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">整数，一个百分比值，如 5</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">增加屏幕亮度，默认为 1 号显示器，每次 MyKeymap 启动重置为 1 号显示器</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键或指令</td>
     </tr>
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">DecBrightness(dealt)</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">整数，一个百分比值，如 5</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">降低屏幕亮度，默认为 1 号显示器，每次 MyKeymap 启动重置为 1 号显示器</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键或指令</td>
     </tr>
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">NextMonitor()</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">调整下一个显示器的亮度，只要 MyKeymap 不重启，当前被调节的显示器就不会再改变，直到触发该函数</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键或指令</td>
     </tr>
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">PreviousMonitor()</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">调整上一个显示器的亮度，只要 MyKeymap 不重启，当前被调节的显示器就不会再改变，直到触发该函数</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键或指令</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">AutoWindowColorBorder()</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">开关函数，未启动时调用则启动，已启动调用则停止，默认随 MyKeymap 启动</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">绑定一个快捷键或一个指令，方便随时启停</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">SwitchToNextColor()</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">切换到下一个边框颜色，达到最后一个则循环到第一个，颜色列表请在代码中自定义</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">自定义为合适的快捷键或指令</td>
     </tr>
   </tbody>
 </table>
@@ -123,9 +141,21 @@ weight:
 - **防误触**：仅当鼠标**静置 500 ms** 时激活窗口，移动过程中绝不触发，彻底避免操作干扰
 - **全场景兼容**：修复桌面、浏览器、文件资源管理器和开始菜单中的右键菜单 bug，实现“露出边边角角就能激活”
 
-### 亮度调节
+### 亮度调节 IncBrightness & DecBrightness
 
-不显示调节界面，更加沉浸。
+不显示调节界面，更加沉浸。功能与 MyKeymap 自带的一致。
+
+### 活动窗口边框着色 AutoWindowColorBorder
+
+Windows 自带类似功能，可使其效果实在不能令人满意。对于第三方软件，更是常常出现失效的情况，比如微信就无法享受该效果。
+
+我使用 AHK 调用系统核心 API，实现了该效果，对第三方软件兼容性极佳，效果也很好。
+
+该功能默认随 MyKeymap 启动，和自动激活窗口相辅相成，为识别激活的窗口又多了一层保障。
+
+效果预览：
+
+![着色](边框着色.png)
 
 ## 关于作者
 
