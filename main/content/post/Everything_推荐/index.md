@@ -23,3 +23,7 @@ Everything 有强大的搜索语法，但是其内置的过滤器太过简单，
 ```text
 ext:code-workspace;exe;lnk;zip;7z;rar;png;jpg;jpeg;pdf;doc;docx;xls;xlsx;ppt;pptx;txt;ini;mp3;wav;mp4|folder:<#param:> pinyin:<#param:>
 ```
+
+## Everything 的其他功能
+
+Everything 有一项非常强大的功能——http 文件服务器。开启它，就可通过局域网下载文件。
