@@ -2,7 +2,7 @@
 title: Bash 配置
 description: 
 date: 2025-02-21
-lastmod: 2025-07-27
+lastmod: 2025-09-06
 image: bash.png
 categories:
     - 技术
@@ -13,7 +13,7 @@ tags:
 
 ## 注意
 
-作者已经放弃在 Windows 上使用 Git Bash，转而使用更加强大的 PowerShell，本文将长期不再维护与更新。在 Linux 上，我主要使用 zsh，故此文暂且完结。
+有时候，修改大量的配置是无意义的行为，这会导致无法专心于“主要的”任务。因此，我不再钻研如何让 Bash 变得更好用，因为这恐怕并无必要。Bash 作为脚本的宿主，履行其功能即可。至于交互上，在 Windows 上，我使用 PowerShell7，在 Linux 上，我使用 fish。二者的默认配置就已经足够好用，只需要花费很短的时间做进一步的修改。
 
 ---
 
