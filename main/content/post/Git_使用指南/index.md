@@ -12,6 +12,12 @@ tags:
     - 命令行
 ---
 
+## 核心内容
+
+```powershell
+git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules <repository-url>
+```
+
 ## 引言
 
 Git 是一个很好用的工具，不过目前的 Git 教程大多比较复杂，难以入门。在我看来，学习一个工具最好的方式就是从简单的使用开始，逐步深入。不管三七二十一，用起来，才是最重要的。本文将介绍 Git 的一些基本用法，帮助您快速上手。
