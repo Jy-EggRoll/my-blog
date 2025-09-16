@@ -1,7 +1,7 @@
 ---
 title: 简易串流教程
 date: 2024-12-10
-lastmod: 2025-07-27
+lastmod: 2025-09-16
 image: 
 categories:
     - 技术
