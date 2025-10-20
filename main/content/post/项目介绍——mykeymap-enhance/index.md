@@ -1,8 +1,8 @@
 ---
 title: 项目介绍——my-keymap
-description: 
+description: 我的 MyKeymap 自定义功能仓库，不依赖于 MyKeymap 就可以运行，可以视为我的自定义 AutoHotkey 库 | My MyKeymap custom function repository runs without relying on MyKeymap and can be considered my custom AutoHotkey library
 date: 2025-08-14
-lastmod: 2025-09-22
+lastmod: 2025-10-21
 image: 
 categories:
     - 项目
@@ -13,21 +13,19 @@ tags:
 weight: 
 ---
 
-## 仓库链接
+## 仓库地址
 
-<https://github.com/Jy-EggRoll/my-keymap/>
+<https://github.com/Jy-EggRoll/mykeymap-enhance/>
 
 ## 使用方法
 
 下载 Release 中的 `data.zip`，解压后将各子文件放入 MyKeymap 的 `data` 目录下即可，之后各个函数可以根据您的需要被 MyKeymap 调用。
 
-> [!WARNING]
+> [!TIP]
 >
-> 如果您不希望自己的设置被覆盖为我的设置，请勿替换 `config.json` 文件。
+> 本仓库的 `sample-config.json` 旨在提供示例配置，这是我本人的 MyKeymap 配置的节选，仅包含我自己的功能与它们的实现，剔除了所有默认设置。您可以将其中的内容复制到自己的 MyKeymap 配置文件中的对应部分并重启 MyKeymap，来体验这些自定义函数。
 >
-> 本仓库的 `config.json` 旨在提供实例配置，事实上这就是我本人的 MyKeymap 配置。您可以备份您自己的配置文件，直接使用我的配置文件或者以文本形式复制特定片段，以简化您的配置。
->
-> 值得注意的是，我的使用习惯和 MyKeymap 的默认配置已经大相径庭，如果您直接使用我的配置文件，可能会不适应或感到功能缺失，所以复制特定片段加入您自己的配置文件的方式是推荐的做法。
+> 然而，还是更建议您阅读此文后手动配置，因为每个人的使用习惯不同，直接复制配置可能并不适合您。
 
 `custom_function.ahk` 仅保留和官方一样的接口，负责导入各个模块，本身不提供任何实际功能，所以如果希望体验全部功能，请加入全部的 ahk 文件。
 
@@ -136,9 +134,19 @@ weight:
 
 两款函数核心功能受 [AltSnap](https://github.com/RamonUnch/AltSnap) 启发，实现上参考了 AHK 官方的示例脚本。
 
+效果展示：
+
+![拖动](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/拖动.gif)
+
+![调节](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/调节.gif)
+
 ### 比例居中 PerCenterAndResizeWindow
 
 针对官方函数“硬编码像素值（如 800 × 600）”的小缺陷，该函数通过“比例参数”实现智能适配不同分辨率的屏幕，实现视觉效果的统一。
+
+效果演示：
+
+![比例居中](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/比例居中.gif)
 
 ### 分屏拓展函数 SplitScreen
 
@@ -162,15 +170,24 @@ weight:
 
 当 gridNum 为 3 时，取值为字符串 "h1"、"h2"、"h3"（水平分割）或 "v1"、"v2"、"v3"（垂直分割）
 
+效果演示：
+
+![命令分屏](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/命令分屏.gif)
+
 ### 自动激活窗口 AutoActivateWindow
 
 解决“激活窗口的心智负担”：鼠标悬停处自动激活窗口，无需纠结“点链接会误触、点资源管理器怕选到文件、点代码编辑器会改变输入焦点”。
 
-- **用户行为识别**：仅当鼠标 **移动后再静置 200 ms 以上且移动范围超过 10 \* 10 px 时** 激活窗口，鼠标移动过程中绝不触发，鼠标一直静止时绝不触发。效果如下：
-  - 纯鼠标操作：十分灵敏，又不至于移动时误触发，200 ms 使用户有充足的移动容错时间
+- **用户行为识别**：仅当鼠标 **移动后再静置 50 ms 以上且移动范围超过 10 \* 10 px 时** 激活窗口，鼠标移动过程中绝不触发，鼠标一直静止时绝不触发。另外，当识别到存在用户从未访问过的窗口时（即从未将鼠标移动到该窗口上），自动激活窗口功能会自动停止，一旦用户访问过该窗口，自动激活就会恢复。
+  - 纯鼠标操作：非常灵敏灵敏，又不至于移动时误触发，有一定的移动容错时间
   - 纯键盘操作：完全不触发自动激活
   - 在软件内点击某超链接，跳出了某窗口，但是鼠标没有大范围移动时，不会导致误触发
+  - 在软件内操作，跳出了某窗口，但是出于习惯移动了鼠标，比如在微信中点开了图片，但是由于这是一个新窗口，鼠标没有移动到该窗口上，所以不会误触发
 - **全场景兼容**：内置了完善的判断逻辑，桌面、浏览器、文件资源管理器和开始菜单中的右键菜单都不会被识别为窗口并误激活，功能十分稳定。
+
+效果展示（中途没有完全没有点击过鼠标左键）：
+
+![自动激活](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/自动激活.gif)
 
 ### 亮度调节 IncBrightness & DecBrightness
 
@@ -188,19 +205,29 @@ Windows 11 自带类似功能，其效果实在不能令人满意。对于第三
 
 该功能默认随 MyKeymap 启动，和自动激活窗口相辅相成，为识别激活的窗口又多了一层保障。
 
-效果预览：
+效果展示：
 
-![着色](边框着色.png)
+![着色](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/边框着色.png)
+
+动态效果如下（请留意紫色的边框）：
+
+![着色动态效果](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/着色动态效果.gif)
 
 如果颜色不合适，请使用 SwitchToNextColor() 来切换颜色，颜色列表在代码中自定义。目前颜色可以随着系统主题自动变更，深色主题对应无后缀列表，浅色主题对应 Mode2 列表。两种模式的默认边框颜色分别如下：
 
-![深色模式-Peach](Peach.png)
+![深色模式-Peach](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/Peach.png)
 
-![浅色模式](Mauve.png)
+![浅色模式](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/Mauve.png)
 
 > [!TIP]
 >
 > 已有的颜色边框，其颜色不会立即随着系统主题变更而刷新。颜色列表会在主题变更后第一次创建着色边框时刷新。换言之，如果想要在修改系统主题色后立即看到当前应用的边框色的更改，请令其失去焦点再获得焦点。
+
+该功能在特定软件上的已知问题：
+
+在 VSCode 较新的版本中，VSCode 自己会尝试用主题设置接管窗口边框着色的功能（假如主题指定了边框色），这可能导致冲突，从而出现颜色时不时失效，甚至显示其他颜色边框的问题。
+
+解决方法是将 VSCode 的 `window.border` 设为 `system` 而非 `default`，这样就可以始终遵循本功能的设置。
 
 ## 关于作者
 
