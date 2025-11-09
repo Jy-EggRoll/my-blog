@@ -8,7 +8,7 @@ categories:
     - 技术
 tags:
     - 重装
-weight: 
+weight: 1
 ---
 
 ## 说明

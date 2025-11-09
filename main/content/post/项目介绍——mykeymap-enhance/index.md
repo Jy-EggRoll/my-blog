@@ -23,11 +23,9 @@ weight:
 
 > [!TIP]
 >
-> 本仓库的 `sample-config.json` 旨在提供示例配置，这是我本人的 MyKeymap 配置的节选，仅包含我自己的功能与它们的实现，剔除了所有默认设置。您可以将其中的内容复制到自己的 MyKeymap 配置文件中的对应部分并重启 MyKeymap，来体验这些自定义函数。
->
-> 然而，还是更建议您阅读此文后手动配置，因为每个人的使用习惯不同，直接复制配置可能并不适合您。
+> 从 1.4 版本开始，不再提供示例 json 配置，而是在 README 中提供各个函数的最佳实践和代码片段，这可以最大限度减少配置冲突的可能性，方便您根据自己的使用习惯进行配置。
 
-`custom_function.ahk` 仅保留和官方一样的接口，负责导入各个模块，本身不提供任何实际功能，所以如果希望体验全部功能，请加入全部的 ahk 文件。
+`custom_function.ahk` 仅保留和官方一样的接口，负责导入各个模块，本身不提供任何实际功能，所以如果希望体验全部功能，请加入全部的 ahk 文件，若您没有自己的自定义函数，可以安全地覆盖 `custom_function.ahk`，如果您有，请自行对比两文件的差异，并将其合并。
 
 ## 引言
 
@@ -56,13 +54,13 @@ weight:
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">DragWindow()</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">直接拖动任意窗口（无需点击标题栏），如果是最大化窗口，该窗口将会被还原为上一个非最大化状态</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">直接拖动任意窗口（无需点击标题栏），如果在最大化窗口上尝试调用该功能，窗口将被调整为占据全屏的普通窗口</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">绑定到前置键+鼠标左键，例如 <kbd>Caps</kbd> + 鼠标左键</td>
     </tr>
     <tr>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">ResizeWindow()</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">无参数</td>
-      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">直接调整任意窗口的大小（无需定位到边框），窗口会被划分为 9 个区域，拖动对应区域即可完成调节，如果是最大化窗口，该窗口将会被还原为上一个非最大化状态</td>
+      <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">直接调整任意窗口的大小（无需定位到边框），窗口会被划分为 9 个区域，拖动对应区域即可完成调节，如果在最大化窗口上尝试调用该功能，会发出提示，用户应该先使用触发键+右键单击该窗口，使之变为占据全屏的普通窗口，再进行大小调节，这是为了避免潜在的闪烁问题</td>
       <td style="padding: 10px; border: 2px solid; overflow-wrap: anywhere;">绑定到前置键+鼠标右键，例如 <kbd>Caps</kbd> + 鼠标右键</td>
     </tr>
     <tr>
@@ -128,6 +126,12 @@ weight:
   </tbody>
 </table>
 
+## 各函数最佳实践的 json 配置片段
+
+您可以在将其复制到 MyKeymap 配置 json 文件的特定部分，并重启 MyKeymap 以应用更改。
+
+[TODO]
+
 ## 额外说明
 
 ### 拖动与调节 DragWindow & ResizeWindow
@@ -185,6 +189,8 @@ weight:
   - 在软件内操作，跳出了某窗口，但是出于习惯移动了鼠标，比如在微信中点开了图片，但是由于这是一个新窗口，鼠标没有移动到该窗口上，所以不会误触发
 - **全场景兼容**：内置了完善的判断逻辑，桌面、浏览器、文件资源管理器和开始菜单中的右键菜单都不会被识别为窗口并误激活，功能十分稳定。
 
+不仅如此，该功能还对软件切换做了特殊优化。不管您是从任务栏手动切换软件，还是使用窗口列表切换，新切换出来的窗口都会被加入未访问列表，避免误触发。
+
 效果展示（中途没有完全没有点击过鼠标左键）：
 
 ![自动激活](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/自动激活.gif)
@@ -197,7 +203,7 @@ weight:
 
 > [!WARNING]
 >
-> 此功能依赖于 Windows 11 API，在 Windows 10 上完全无效。
+> 此功能依赖于 Windows 11 API，在 Windows 10 上 **完全无效**。
 
 Windows 11 自带类似功能，其效果实在不能令人满意。对于第三方软件，更是常常出现失效的情况，比如微信就无法享受该效果。
 
@@ -236,3 +242,11 @@ Windows 11 自带类似功能，其效果实在不能令人满意。对于第三
 也欢迎浏览作者在 GitHub 上的其他项目。
 
 祝您使用愉快。
+
+## 关于 `file-link-manager-links.json`
+
+这个是我的另一个软件建立的，维护着该仓库到我 MyKeymap 真实目录的硬链接关系，实现了开发仓库和使用仓库的分离（这有助于让我更好地管理和维护该通用仓库）。如果您不使用该软件，可以忽略此文件。该软件由 Go 语言编写，尚在开发阶段，敬请期待。
+
+## 统计
+
+[![统计](https://starchart.cc/Jy-EggRoll/mykeymap-enhance.svg?variant=adaptive)](https://starchart.cc/Jy-EggRoll/mykeymap-enhance)
