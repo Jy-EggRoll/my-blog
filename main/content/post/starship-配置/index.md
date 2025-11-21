@@ -22,4 +22,4 @@ Starship 是一个跨平台的命令行提示符，由 Rust 编写，旨在提�
 
 Starship 的默认配置文件位于 `~/.config/starship.toml`。以下是一个示例配置文件，使用了 Catppuccin Mocha 调色板，并包含了各种模块的配置。此配置是我将预设配置深度修改后版本。
 
-[点击下载或查看我的配置文件](starship.toml)
+[下载我的配置文件](starship.toml)
