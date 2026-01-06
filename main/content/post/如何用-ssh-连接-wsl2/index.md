@@ -16,7 +16,7 @@ weight:
 
 首先，我想说明一下为什么会写这样一篇文章。
 
-我最近在使用 VS Code 远程连接主机，但是遇到了一些问题。举例来说，我发现加入在 Windows 上启用 SSH Server，然后用 VS Code 连接到 Windows，再进入 Windows 上的 WSL2，再启用 WSL2 中的容器就会失败。这种层层嵌套导致失败的原因我已经暂时研究明白了，但是本文先不再赘述，防止偏离主题。
+我最近在使用 VS Code 远程连接主机，但是遇到了一些问题。举例来说，我发现假如在 Windows 上启用 SSH Server，然后用 VS Code 连接到 Windows，再进入 Windows 上的 WSL2，再启用 WSL2 中的容器就会失败。这种层层嵌套导致失败的原因我已经暂时研究明白了，但是本文先不再赘述，防止偏离主题。
 
 本文旨在成为目前互联网上最全面、最实用、最可复现的关于“如何通过 SSH 访问 WSL2（例如 Fedora 43）”的文档。
 
@@ -57,6 +57,8 @@ ip -4 addr show eth0 | awk '/inet /{print $2}' | cut -d/ -f1
 ### 配置端口转发
 
 请为 Windows 启动 `sudo`，否则以下操作则必须使用管理员权限的终端运行。
+
+我非常喜欢 Windows 11 24H2 后默认引入的 `sudo`，这可以减少很多工作量，非常方便。
 
 ```pwsh
 sudo netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=2222 connectaddress=<在上一步获取到的 ip 地址> connectport=22
