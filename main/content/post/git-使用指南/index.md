@@ -2,25 +2,31 @@
 title: Git 使用指南
 description:
 date: 2025-06-27
-lastmod: 2025-07-30
+lastmod: 2026-01-14
 image: 终端.png
 categories:
     - 技术
 tags:
     - Git
     - 浅克隆
-    - 命令行
+    - ignore 规则
+    - 代理
 ---
-
-## 核心内容
-
-```powershell
-git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules <repository-url>
-```
 
 ## 引言
 
-Git 是一个很好用的工具，不过目前的 Git 教程大多比较复杂，难以入门。在我看来，学习一个工具最好的方式就是从简单的使用开始，逐步深入。不管三七二十一，用起来，才是最重要的。本文将介绍 Git 的一些基本用法，帮助您快速上手。
+Git 是一个很好用的工具，不过目前的 Git 教程大多比较复杂，难以入门。在我看来，学习一个工具最好的方式就是从简单的使用开始，逐步深入。不管三七二十一，用起来，才是最重要的。本文将介绍 Git 的一些基本用法，帮助您快速上手。该教程完全以**实用**为出发点，且会不断更新。
+
+当您使用 Git 一段时间后，可能就会被 Git 的一些写法所困扰，这时本文仍然有用，可以用作一些参考。
+
+## 命令速览
+
+
+```shell
+git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules https://github.com/Jy-EggRoll/
+```
+
+这将快捷复制我名下的仓库（在后面加上仓库名即可），并保持“一层浅克隆”“多分支克隆（每个分支都是浅的）”“递归子模块克隆”“子模块浅克隆”，直接解决基本的仓库初始化问题，又能保证克隆的性能。
 
 ## 基本用法
 
@@ -34,7 +40,7 @@ Git 是一个很好用的工具，不过目前的 Git 教程大多比较复杂�
 
 基本用法：
 
-```powershell
+```shell
 git clone <repository-url>
 ```
 
@@ -46,7 +52,7 @@ git clone <repository-url>
 
 举个例子，假设某个仓库的文件结构有过极大的变动，克隆完整仓库可能要下载 100 MB 数据，而浅克隆可能只需要下载 10 MB。
 
-```powershell
+```shell
 git clone --depth 1 <repository-url>
 ```
 
@@ -58,7 +64,7 @@ git clone --depth 1 <repository-url>
 
 实际的命令类似：
 
-```powershell
+```shell
 git clone --depth 1 --no-single-branch <repository-url>
 ```
 
@@ -74,23 +80,49 @@ git clone --depth 1 --no-single-branch <repository-url>
 
 所以，为了支持更多的情况，更加成熟的命令是：
 
-```powershell
+```shell
 git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules <repository-url>
 ```
 
 浅克隆在速度上，类似于直接下载代码的压缩包。这是因为，常规的克隆通常会把所有历史记录都克隆下来，而其中可能包含被删除的文件。常规克隆的大小一般显著大于浅克隆。所以，使用浅克隆可以提升克隆的速度。然而，使用浅克隆会带来一些问题。比如，在开发过程中，如果签出到新分支，完成开发后再合并，可能会遇到没有共同提交历史而无法合并的问题。这其实很好解决，只需要使用 `git fetch --unshallow` 命令即可（或者对 `fetch` 追加 `--depth <number>` 参数）。该命令的意思是，以完整历史（unshallow，即非浅）的形式（或指定深度）抓取远程仓库的提交记录。
 
+### `.gitignore` 文件规则速查表
+
+熟练的 Git 用户总是避免不了使用 `.gitignore`文件，这是很重要的，我在这里放一个速查表：
+
+| **匹配模式** | **说明** | **示例** |
+|--------------|----------|----------|
+| （空行） | 空行将被忽略 | 没有示例 |
+| `# text comment` | 以 `#` 开头的行将被忽略 | 没有示例 |
+| `name` | 所有名为 `name` 的文件、文件夹，以及任意 `name` 文件夹下的所有文件和子文件夹<br>**请注意，如果您想要忽略名为 `name` 的文件夹，请务必在其后加上 `/`，否则您会不小心忽略掉任意后缀名的以 `name` 为名的文件，如 `name.txt`，这可能是意料之外的情况** | `/name.log`<br>`/name/file.txt`<br>`/lib/name.log` |
+| `name/` | 末尾带 `/` 表示该模式仅匹配文件夹，会匹配任意 `name` 文件夹下的所有文件和子文件夹 | `/name/file.txt`<br>`/name/log/name.log`<br><br>**不匹配：**<br>`/name.log` |
+| `name.file` | 所有名为 `name.file` 的文件 | `/name.file`<br>`/lib/name.file` |
+| `/name.file` | 以 `/` 开头表示该模式仅匹配**根目录**下的 `name.file` 文件 | `/name.file`<br><br>**不匹配：**<br>`/lib/name.file` |
+| `lib/name.file` | 指定特定文件夹下文件的匹配模式，始终**相对于根目录**（即使不以 `/` 开头） | `/lib/name.file`<br><br>**不匹配：**<br>`name.file`<br>`/test/lib/name.file` |
+| `**/lib/name.file` | `/` 前加 `**` 表示匹配仓库中的**任意层级文件夹**，不局限于根目录 | `/lib/name.file`<br>`/test/lib/name.file` |
+| `**/name` | 所有名为 `name` 的文件夹，以及任意 `name` 文件夹下的所有文件和子文件夹 | `/name/log.file`<br>`/lib/name/log.file`<br>`/name/lib/log.file` |
+| `/lib/**/name` | 所有位于 `lib` 文件夹及其任意子文件夹下的 `name` 文件夹，以及这些 `name` 文件夹内的所有文件和子文件夹 | `/lib/name/log.file`<br>`/lib/test/name/log.file`<br>`/lib/test/ver1/name/log.file`<br><br>**不匹配：**<br>`/name/log.file` |
+| `*.file` | 所有**后缀为 `.file`** 的文件 | `/name.file`<br>`/lib/name.file` |
+| `*name/` | 所有**名称以 `name` 结尾**的文件夹 | `/lastname/log.file`<br>`/firstname/log.file` |
+| `name?.file` | `?` 匹配**单个任意字符** | `/names.file`<br>`/name1.file`<br><br>**不匹配：**<br>`/names1.file` |
+| `name[a-z].file` | `[范围]` 匹配**范围内的单个字符**（此例为 a-z 的字母，也可匹配数字） | `/names.file`<br>`/nameb.file`<br><br>**不匹配：**<br>`/name1.file` |
+| `name[abc].file` | `[字符集]` 匹配**字符集中的单个字符**（此例为 a、b、c 中的任意一个） | `/namea.file`<br>`/nameb.file`<br><br>**不匹配：**<br>`/names.file` |
+| `name[!abc].file` | `[!字符集]` 匹配**不在字符集中的单个字符**（此例为除 a、b、c 外的任意字符） | `/names.file`<br>`/namex.file`<br><br>**不匹配：**<br>`/namesb.file` |
+| `*.file`<br>`!name/secret.log` | `!` 表示**取反或例外规则**，匹配所有 `name` 文件夹下的文件和子文件夹，但排除 `name/secret.log` | `/name/file.txt`<br>`/name/log/name.log`<br><br>**不匹配：**<br>`/name/secret.log` |
+| `*.file`<br>`!name.file` | `!` 表示取反或例外规则，匹配所有后缀为 `.file` 的文件，但排除 `name.file` | `/log.file`<br>`/lastname.file`<br><br>**不匹配：**<br>`/name.file` |
+| `*.file`<br>`!name/*.file`<br>`junk.*` | 在取反规则后添加新的匹配模式，会重新忽略之前被排除的文件<br>匹配所有后缀为 `.file` 的文件，但排除 `name` 文件夹下的 `.file` 文件；若文件名为 `junk` 开头则仍会匹配 | `/log.file`<br>`/name/log.file`<br><br>**不匹配：**<br>`/name/junk.file` |
+
 ### 分支
 
 分支是很重要、很有用的概念。分支可以让你在不影响主分支的情况下进行开发。创建分支的命令如下：
 
-```powershell
+```shell
 git branch <branch-name>
 ```
 
 切换分支的命令如下：
 
-```powershell
+```shell
 git checkout <branch-name>
 ```
 
