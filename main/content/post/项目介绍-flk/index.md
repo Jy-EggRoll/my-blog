@@ -1,5 +1,5 @@
 ---
-title: 项目介绍——flk
+title: 项目介绍-flk
 description: flk（FileLinK）：跨平台文件链接管理器，让配置同步更简单
 date: 2025-11-28
 lastmod: 2025-11-28
@@ -10,8 +10,6 @@ tags:
     - Go
     - 符号链接
     - 硬链接
-    - 配置同步
-    - 配置恢复
 weight: 
 ---
 
