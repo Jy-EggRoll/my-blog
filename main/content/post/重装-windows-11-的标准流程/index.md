@@ -17,6 +17,8 @@ weight:
 
 每次获取镜像后留档，对比哈希，建议使用比当前大版本靠前一个版本的稳定版系统，每次重装前需要查看当前的问题说明，以决定是否要升级到最新版本
 
+当前，由于 25H2 只是 24H2 的“功能启用包”，二者在 Bug 上几乎没有任何区别。鉴于微软不断地给这些版本引入毫不必要的 AI 特性，现在选择 23H2 似乎才是明智的选择。
+
 ## 重装中
 
 - [ ] 格式化 ESP 分区
@@ -34,7 +36,7 @@ shift + f10 -> start ms-cxh:localonly 可以直接建立无密码本地用户
 
 - [ ] 恢复到默认主题
 - [ ] 关闭 defender 中的实时保护和篡改保护
-- [ ] 使用注册表编辑，彻底关闭 defender 和 smart app control
+- [ ] 使用注册表编辑，彻底关闭 defender 和 smart app control【需要重新启动才可以看到效果】
 - [ ] 禁止安全中心软件的自启动
 - [ ] 配置组策略【值得注意的是，导入的组策略在刷新时间上完全随机，几乎不可用，只能手动设置，这样可以立即生效】
   - Windows 更新
@@ -49,8 +51,8 @@ shift + f10 -> start ms-cxh:localonly 可以直接建立无密码本地用户
     - 禁用小组件板：已启用
     - 在锁屏界面上禁用小组件：已启用
 - [ ] 开启网络并静置
-- [ ] 启用 sudo，模式为内联
-- [ ] 用命令禁用 Windows 的索引服务并且关闭其自启动【sudo sc stop "wsearch"】【sudo sc config "wsearch" start=disabled】
+- [ ] 启用管理员 PowerShell 或终端，执行以下操作
+- [ ] 用命令禁用 Windows 的索引服务并且关闭其自启动【Stop-Service wsearch】【Set-Service -Name wsearch -StartupType Disabled】
 - [ ] 关闭休眠【sudo powercfg /h off】
 - [ ] 重命名设备
 - [ ] 重启
@@ -62,10 +64,12 @@ shift + f10 -> start ms-cxh:localonly 可以直接建立无密码本地用户
 - [ ] 安装 7zip
 - [ ] 将 v2rayN 解压并以管理员启动
 - [ ] 打开任务管理器，在网络空闲时，以 Tun 模式以接管全部网络【这是能正常打开微软商店的条件】
-- [ ] 安装 PowerShell 并更新 Terminal
+- [ ] 更新 Terminal
+- [ ] 安装 pwsh
 - [ ] RedmiBookPro 设备管理器中关闭蓝牙的省电模式
+- [ ] 查看 Edge 的版本号，酌情关闭 Edge 的自动升级，如果版本合适，可以在此处直接禁用 Edge 的所有更新任务计划和更新服务
 - [ ] Edge 关闭 smart screen
-- [ ] 更新 AMD 显卡驱动【直接更新对应的型号，不使用自动检测的软件】
+- [ ] 更新 AMD 显卡驱动【直接更新对应的型号，不使用自动检测的软件，建议更新最新版本前的一个版本】
 - [ ] 重启
 
 ---
