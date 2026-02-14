@@ -15,6 +15,7 @@ title                  = "蛋卷儿的博客"
     post = "/p/:slug/"
 
 [params]
+    SortBy  = "lastmod"
     favicon = "favicon.png"
 
     [params.footer]
