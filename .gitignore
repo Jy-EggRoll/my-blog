@@ -1,4 +1,4 @@
-/main/public
-/main/resources
-/main/node_modules
+public/
+resources/
+node_modules/
 !sudo.exe

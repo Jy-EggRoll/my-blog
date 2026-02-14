@@ -1,0 +1,147 @@
+DefaultContentLanguage = "zh"
+baseurl                = "https://eggroll.pages.dev/"
+copyright              = "蛋卷儿"
+hasCJKLanguage         = true
+languageCode           = "zh-cn"
+theme                  = "hugo-theme-stack"
+title                  = "蛋卷儿的博客"
+
+[pagination]
+    pagerSize = 5
+
+[permalinks]
+    page = "/:slug/"
+    post = "/p/:slug/"
+
+[params]
+    favicon            = "/favicon.png"
+    featuredImageField = "image"
+    mainSections       = ["post"]
+    rssFullContent     = true
+
+    [params.footer]
+        since = 2024
+
+    [params.dateFormat]
+        lastUpdated = "2006 年 1 月 2 日"
+        published   = "2006 年 1 月 2 日"
+
+    [params.sidebar]
+        avatar   = "avatar.png"
+        subtitle = "避嚣寻谧"
+
+    [params.article]
+        math = true
+        toc  = true
+        # readingTime = true
+
+    [[params.widgets.homepage]]
+        type = "search"
+
+    [[params.widgets.homepage]]
+        type = "archives"
+
+        [params.widgets.homepage.params]
+            limit = 5
+
+    [[params.widgets.homepage]]
+        type = "categories"
+
+        [params.widgets.homepage.params]
+            limit = 10
+
+    [[params.widgets.homepage]]
+        type = "tag-cloud"
+
+        [params.widgets.homepage.params]
+            limit = 10
+
+    [[params.widgets.page]]
+        type = "toc"
+
+    [params.opengraph.twitter]
+        card = "summary_large_image"
+
+    [params.defaultImage.opengraph]
+        enabled = false
+        local   = false
+
+    [params.colorScheme]
+        default = "auto"
+        toggle  = true
+
+    [params.imageProcessing.cover]
+        enabled = true
+
+    [params.imageProcessing.content]
+        enabled = true
+
+[menu]
+    main = []
+
+    [[menu.social]]
+        identifier = "github"
+        name       = "GitHub"
+        url        = "https://github.com/Jy-EggRoll"
+        weight     = 99
+
+        [menu.social.params]
+            icon   = "brand-github"
+            newTab = true
+
+    [[menu.social]]
+        identifier = "bilibili"
+        name       = "哔哩哔哩"
+        url        = "https://space.bilibili.com/165582851?spm_id_from=333.1007.0.0"
+        weight     = 98
+
+        [menu.social.params]
+            icon   = "brand-github"
+            newTab = true
+
+    [[menu.social]]
+        identifier = "mypage"
+        name       = "我的网站"
+        url        = "https://jy-eggroll.github.io/my-page/"
+        weight     = 97
+
+        [menu.social.params]
+            icon   = "brand-github"
+            newTab = true
+
+[related]
+    includeNewer = true
+    threshold    = 60
+    toLower      = false
+
+    [[related.indices]]
+        name   = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name   = "categories"
+        weight = 200
+
+[markup.goldmark.extensions.passthrough]
+    enable = true
+
+    [markup.goldmark.extensions.passthrough.delimiters]
+        block  = [["$$", "$$"], ["\\[", "\\]"]]
+        inline = [["\\(", "\\)"]]
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[markup.tableOfContents]
+    endLevel   = 4
+    ordered    = true
+    startLevel = 2
+
+[markup.highlight]
+    codeFences         = true
+    guessSyntax        = true
+    lineNoStart        = 1
+    lineNos            = true
+    lineNumbersInTable = true
+    noClasses          = false
+    tabWidth           = 4
