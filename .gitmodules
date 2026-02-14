@@ -1,3 +1,4 @@
 [submodule "main/themes/hugo-theme-stack"]
     path = main/themes/hugo-theme-stack
     url = https://github.com/Jy-EggRoll/hugo-theme-stack.git
+	branch = eggroll-theme
