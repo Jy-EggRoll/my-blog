@@ -2,7 +2,7 @@ DefaultContentLanguage = "zh"
 baseurl                = "https://eggroll.pages.dev/"
 copyright              = "蛋卷儿"
 hasCJKLanguage         = true
-languageCode           = "zh-cn"
+languageCode           = "zh-cn"                      # 标准语言代码
 theme                  = "hugo-theme-stack"
 title                  = "蛋卷儿的博客"
 
@@ -14,10 +14,7 @@ title                  = "蛋卷儿的博客"
     post = "/p/:slug/"
 
 [params]
-    favicon            = "/favicon.png"
-    featuredImageField = "image"
-    mainSections       = ["post"]
-    rssFullContent     = true
+    favicon = "favicon.png"
 
     [params.footer]
         since = 2024
@@ -34,50 +31,25 @@ title                  = "蛋卷儿的博客"
         math = true
         toc  = true
         # readingTime = true
+        wordCount = true
 
-    [[params.widgets.homepage]]
-        type = "search"
-
-    [[params.widgets.homepage]]
-        type = "archives"
-
-        [params.widgets.homepage.params]
-            limit = 5
-
-    [[params.widgets.homepage]]
-        type = "categories"
-
-        [params.widgets.homepage.params]
-            limit = 10
-
-    [[params.widgets.homepage]]
-        type = "tag-cloud"
-
-        [params.widgets.homepage.params]
-            limit = 10
-
-    [[params.widgets.page]]
-        type = "toc"
-
-    [params.opengraph.twitter]
-        card = "summary_large_image"
-
-    [params.defaultImage.opengraph]
-        enabled = false
-        local   = false
+    [params.widgets]
+        homepage = [
+            { type = "archives", params = { limit = 5 } },
+            { type = "categories", params = { limit = 10 } },
+            { type = "search" },
+            { type = "tag-cloud", params = { limit = 10 } },
+        ]
+        page = [{ type = "toc" }]
 
     [params.colorScheme]
         default = "auto"
         toggle  = true
 
-    [params.imageProcessing.cover]
-        enabled = true
-
-    [params.imageProcessing.content]
-        enabled = true
+    [params.comments]
+        enabled = false
 
 [menu]
-    main = []
 
     [[menu.social]]
         identifier = "github"
@@ -96,7 +68,7 @@ title                  = "蛋卷儿的博客"
         weight     = 98
 
         [menu.social.params]
-            icon   = "brand-github"
+            icon   = "bilibili"
             newTab = true
 
     [[menu.social]]
@@ -106,12 +78,11 @@ title                  = "蛋卷儿的博客"
         weight     = 97
 
         [menu.social.params]
-            icon   = "brand-github"
+            icon   = "circle"
             newTab = true
 
 [related]
     includeNewer = true
-    threshold    = 60
     toLower      = false
 
     [[related.indices]]
@@ -125,23 +96,17 @@ title                  = "蛋卷儿的博客"
 [markup.goldmark.extensions.passthrough]
     enable = true
 
-    [markup.goldmark.extensions.passthrough.delimiters]
-        block  = [["$$", "$$"], ["\\[", "\\]"]]
-        inline = [["\\(", "\\)"]]
-
 [markup.goldmark.renderer]
     unsafe = true
 
 [markup.tableOfContents]
     endLevel   = 4
-    ordered    = true
+    ordered    = false
     startLevel = 2
 
 [markup.highlight]
     codeFences         = true
     guessSyntax        = true
-    lineNoStart        = 1
     lineNos            = true
     lineNumbersInTable = true
     noClasses          = false
-    tabWidth           = 4
