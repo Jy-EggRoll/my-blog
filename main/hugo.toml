@@ -110,3 +110,6 @@ title                  = "蛋卷儿的博客"
     lineNos            = true
     lineNumbersInTable = true
     noClasses          = false
+
+[frontmatter]
+    lastmod = [":git", "lastmod"] # 优先使用 git 信息
