@@ -2,6 +2,7 @@
 title: 本博客的目标
 description:
 date: 2025-02-13
+lastmod: 2026-02-14
 image: 目标.jpg
 categories:
     - 愿景
