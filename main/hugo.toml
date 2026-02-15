@@ -32,7 +32,6 @@ title                  = "蛋卷儿的博客"
     [params.article]
         math = true
         toc  = true
-        # readingTime = true
         wordCount = true
 
     [params.widgets]
