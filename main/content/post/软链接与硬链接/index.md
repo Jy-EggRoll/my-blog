@@ -1,13 +1,12 @@
 ---
 title: 软链接与硬链接
-description: 高效、集中的文件管理方法
+description: 文件管理方法
 date: 2025-08-19
-lastmod: 2025-10-22
+lastmod: 2025-08-19
 image: 
 categories:
     - 技术
 tags:
-    - 文件系统
     - 软链接
     - 硬链接
 weight: 
