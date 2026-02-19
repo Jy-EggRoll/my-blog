@@ -6,6 +6,7 @@ lastmod: 2025-11-08
 image: 
 categories:
     - 记录
+    - 技术
 tags:
     - 充电
 weight: 
