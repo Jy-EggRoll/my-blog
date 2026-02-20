@@ -2,7 +2,7 @@
 title: Windows on ARM 系统重装指南
 description: 
 date: 2025-02-14
-lastmod: 2025-02-24
+lastmod: 2026-02-20
 image: woa.png
 categories:
     - 技术
