@@ -232,6 +232,8 @@ irm https://get.activated.win | iex
 - 目前，UM780XTX 在使用 23H2 系统的情况下，千万不能更新最新版本的驱动，这会导致 Software 陷入近乎卡死的状态，以及出现无法调节屏幕亮度的问题，这非常严重
 - `whql-amd-software-adrenalin-edition-25.9.1-win10-win11-sep-rdna.exe` 是一个尚可的版本
 
+- 安装显卡驱动后，建议禁用显卡设置的快捷键功能，以免和我的其他快捷键冲突
+
 ### Edge 相关问题和解决方案
 
 - 不喜欢在窗口管理界面的标签页：系统 >> 多任务处理 >> Alt + Tab 不显示选项卡
