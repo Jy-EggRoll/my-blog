@@ -61,6 +61,8 @@ Network Card(s):           5 NIC(s) Installed.
 Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
 ```
 
-当前，已经测试性地开启了 BIOS 设置中的“性能模式”，待观察。
+当前，已经测试性地开启了 BIOS 设置中的“性能模式”，待观察。每次出现掉驱动的时候，总是在 opencode 运行中的时候，不得不怀疑该软件可能会影响显卡驱动的稳定性，这有待进一步观察测试。
 
-当前，每次出现掉驱动的时候，总是在 opencode 运行中的时候，不得不怀疑该软件可能会影响显卡驱动的稳定性，这有待进一步观察测试。
+## 更新
+
+使用了 2025 年 12 月版的驱动，没有再出现掉驱动的问题，可见该版本比 2025 年 9 月版更稳定。
