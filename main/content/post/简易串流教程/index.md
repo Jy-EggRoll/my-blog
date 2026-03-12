@@ -54,7 +54,7 @@ netsh advfirewall firewall delete rule name="Sunshine TCP 放行"
 
 ### 禁用自启动
 
-在服务中将 Sunshine 相关改为“手动”即可。不过，很具我对相关资料的查找，如果您需要在串流中对宿主机进行重启操作，那么极不推荐关闭自启动。
+在服务中将 Sunshine 相关改为“手动”即可。不过，根据我对相关资料的查找，如果您需要在串流中对宿主机进行重启操作，那么极不推荐关闭自启动。
 
 ## Moonlight 介绍
 
@@ -70,6 +70,14 @@ Moonlight 可以视为对 Sunshine 数据的接收端。该软件同样是开源
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | 显示连接信息 |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> | 切换鼠标：远程桌面模式/游戏模式 |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | 切换鼠标显示/隐藏 |
+
+### 个人推荐设置
+
+除去默认设置，建议打开：
+
+- 帧速调节（Wi-Fi 环境下可以稍微降低突然性的卡顿）
+- 为远程桌面而不是游戏优化鼠标（在 Moonlight 处于窗口模式下时，可以实现窗口和窗口外部的无缝鼠标切换）
+- 捕获系统快捷键-全屏（字面意思，灵活的快捷键穿透）
 
 ## 其他用法
 
