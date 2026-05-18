@@ -1,7 +1,7 @@
 ---
 title: 简易串流教程
 date: 2024-12-10
-lastmod: 2026-05-07
+lastmod: 2026-05-18
 image: 
 categories:
     - 技术
@@ -18,26 +18,35 @@ tags:
 
 ## Sunshine 介绍
 
-Sunshine 是一款用于串流的软件，可以理解为发送端。该软件是开源软件，建议在具有高性能显卡（独立显卡或者核心显卡，建议独立显卡）的 x64 Windows 平台上使用。
+Sunshine 是串流的发送端。该软件是开源的，建议在具有高性能显卡（独立显卡优先）的 x64 Windows 平台上使用。
 
 ### 校园网串流部署
 
-校园网可以视为一个覆盖范围很广的内网，由于作者本人就读于北京邮电大学，该校校园网不收费且速度较快，在进行串流时具有得天独厚的优势。不过，如果不做任何处理，是无法查找到设备的。设置方法如下。
+校园网可以视为一个覆盖范围很广的内网。由于作者本人就读于北京邮电大学，该校校园网不收费且速度较快，在进行串流时具有得天独厚的优势。不过，如果不做任何处理，客户端通常无法发现 Sunshine 服务器。设置方法如下。
 
-**管理员** 运行 `PowerShell` 输入以下命令放行串流所需要的端口：
+以管理员身份运行 `PowerShell`，输入以下命令放行串流所需端口：
 
 > [!TIP]
 >
 > 如果您使用 Windows 11 24H2 以上版本，可以使用 `sudo`（需要开启）
 >
+> 开启规则的命令：
+>
 > ```powershell
-> sudo netsh advfirewall firewall add rule name="Sunshine UDP 放行" dir=in action=allow protocol=TCP localport=47998-48000
+> sudo netsh advfirewall firewall add rule name="Sunshine UDP 放行" dir=in action=allow protocol=UDP localport=47998-48000
 >
 > sudo netsh advfirewall firewall add rule name="Sunshine TCP 放行" dir=in action=allow protocol=TCP localport=47984,47989,47990,48010
 > ```
+>
+> 关闭规则的命令：
+>
+> ```powershell
+> sudo netsh advfirewall firewall delete rule name="Sunshine UDP 放行"
+> sudo netsh advfirewall firewall delete rule name="Sunshine TCP 放行"
+> ```
 
 ```powershell
-netsh advfirewall firewall add rule name="Sunshine UDP 放行" dir=in action=allow protocol=TCP localport=47998-48000
+netsh advfirewall firewall add rule name="Sunshine UDP 放行" dir=in action=allow protocol=UDP localport=47998-48000
 
 netsh advfirewall firewall add rule name="Sunshine TCP 放行" dir=in action=allow protocol=TCP localport=47984,47989,47990,48010
 ```
@@ -58,7 +67,7 @@ netsh advfirewall firewall delete rule name="Sunshine TCP 放行"
 
 ## Moonlight 介绍
 
-Moonlight 可以视为对 Sunshine 数据的接收端。该软件同样是开源软件，对性能的要求不高，且支持的平台极多，如 ARM64 Windows、ARMv7/v8/x86/x64 Android 等非主流平台。
+Moonlight 是 Sunshine 串流的接收端。该软件同样是开源的，对性能的要求不高，且支持的平台极多，如 ARM64 Windows、ARMv7/v8/x86/x64 Android 等非主流平台。
 
 ### Windows 端 Moonlight 常用快捷键
 
@@ -84,12 +93,12 @@ Moonlight 可以视为对 Sunshine 数据的接收端。该软件同样是开源
 
 ## 其他用法
 
-当作高清电脑副屏（可以达到原生最合适的分辨率）。注意，该情况下由于 Sunshine 的更新，目前互联网上其他教程有可能出现问题。主要解决方案也跟简单，暂不做细致描述，请读者注意填写的内容是“ID”还是其他特定格式即可。
+当作高清电脑副屏使用（可以达到原生最合适的分辨率）。注意，该情况下由于 Sunshine 更新，现有教程可能会出现问题。主要解决方案也很简单，暂不做细致描述，请读者注意填写的内容是“ID”还是其他特定格式。
 
-使用到的软件为 parsec-vdd，该软件还有一个妙用，可以用来防止高分屏切换时出现的窗口跳变问题（该问题似乎是在 Windows 11 24H2 出现的，23H2 正常）。该问题不属于串流内容，我会新开一篇文章来介绍。
+使用的软件为 parsec-vdd，该软件还有一个妙用，可以用来防止高分屏切换时出现的窗口跳变问题（该问题似乎出现在 Windows 11 24H2 上，23H2 则正常）。该问题不属于串流内容，我会新开一篇文章来介绍。
 
 ## 使用中的一些问题记录
 
 ![配置列表](index/image.png)
 
-在该配置列表，如果打开了“断开连接后恢复配置”，则必须保证断开连接时，Windows 系统并不处于锁屏界面下。如果处于锁屏界面下，Sunshine 将无法恢复显示器，甚至有可能因为显示器太长时间未被唤醒而导致进入现代待机状态，并使下一次串流无法正常进行，这绝对不是预期中的行为。
+在该配置列表中，如果打开了“断开连接后恢复配置”，则必须保证断开连接时 Windows 系统不是锁屏状态。如果处于锁屏界面，Sunshine 可能无法恢复显示器，甚至可能因为显示器长时间未被唤醒而进入现代待机状态，导致下一次串流无法正常进行。
