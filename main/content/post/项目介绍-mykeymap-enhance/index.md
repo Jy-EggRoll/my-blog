@@ -2,7 +2,7 @@
 title: 项目介绍-mykeymap-enhance
 description: 我的 MyKeymap 自定义功能仓库，不依赖于 MyKeymap 就可以运行，可以视为我的自定义 AutoHotkey 库
 date: 2025-08-14
-lastmod: 2026-04-03
+lastmod: 2026-06-26
 image: 
 categories:
     - 项目
@@ -310,4 +310,4 @@ weight:
 
 ## 统计
 
-[![统计](https://starchart.cc/Jy-EggRoll/mykeymap-enhance.svg?variant=adaptive)](https://starchart.cc/Jy-EggRoll/mykeymap-enhance)
+[![Star History Chart](https://api.star-history.com/chart?repos=jy-eggroll/mykeymap-enhance&type=date&legend=top-left)](https://www.star-history.com/?repos=jy-eggroll%2Fmykeymap-enhance&type=date&legend=top-left)
