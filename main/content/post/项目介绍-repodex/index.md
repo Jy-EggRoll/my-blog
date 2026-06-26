@@ -10,7 +10,7 @@ tags:
     - Cloudflare
     - GitHub
     - 模糊搜索
-weight: 
+weight: 1
 ---
 
 # RepoDex

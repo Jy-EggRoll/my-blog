@@ -14,7 +14,7 @@ weight:
 
 ## 简介
 
-Everything 是一款优秀的文件搜索工具，能够快速地在 Windows 系统中找到文件。本文将介绍 Everything 的一些功能和配置方法。不过，个人更加喜欢使用 Listary，见[Listary 推荐](https://eggroll.pages.dev/p/Listary_推荐)这篇文章。
+Everything 是一款优秀的文件搜索工具，能够快速地在 Windows 系统中找到文件。本文将介绍 Everything 的一些功能和配置方法。不过，个人更加喜欢使用 Listary，见[Listary 推荐](https://eggroll.pages.dev/p/listary-推荐/)这篇文章。
 
 ## 我设置的过滤器
 

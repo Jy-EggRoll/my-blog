@@ -16,7 +16,7 @@ weight:
 
 ## 官网
 
-Listaty 的网址为：<https://www.listary.com/>
+Listary 的网址为：<https://www.listary.com/>
 
 ## 特色介绍
 

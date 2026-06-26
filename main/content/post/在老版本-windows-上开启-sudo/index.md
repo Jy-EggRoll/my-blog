@@ -19,7 +19,7 @@ weight:
 以管理员身份打开终端，运行：
 
 ```pwsh
-sudo config --enable enable
+sudo config --enable
 ```
 
 即可以内联模式启用 sudo。

@@ -58,7 +58,7 @@ ip -4 addr show eth0 | awk '/inet /{print $2}' | cut -d/ -f1
 
 ### 配置端口转发
 
-请为 Windows 启动 `sudo`，否则以下操作则必须使用管理员权限的终端运行。
+请为 Windows 启用 `sudo`，否则以下操作则必须使用管理员权限的终端运行。
 
 我非常喜欢 Windows 11 24H2 后默认引入的 `sudo`，这可以减少很多工作量，非常方便。
 
