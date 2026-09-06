@@ -239,7 +239,7 @@ weight:
 
 不仅如此，该功能还对软件切换做了特殊优化。不管您是从任务栏手动切换软件，还是使用窗口列表切换，新切换出来的窗口都会被加入未访问列表，避免误触发。
 
-效果展示（中途没有完全没有点击过鼠标左键）：
+效果展示（中途完全没有点击过鼠标左键）：
 
 ![自动激活](https://raw.githubusercontent.com/Jy-EggRoll/mykeymap-enhance/refs/heads/main/README/自动激活.gif)
 

@@ -35,7 +35,7 @@ git clone --depth 1 --no-single-branch --recurse-submodules --shallow-submodules
 
 新建一个仓库，熟悉每个按钮、每个功能，自然就能掌握很多基础用法。
 
-在掌握基本操作语后，就可以学习进阶操作了。
+在掌握基本操作后，就可以学习进阶操作了。
 
 ### 克隆仓库
 
