@@ -1,5 +1,18 @@
 # 项目级 i18n，与主题自带的 i18n/zh.toml 合并（同名键以项目为准）。
-# 主题 v4.0.3 删除了 wordCount 文案，这里按需补回，供本地覆盖的
-# layouts/_partials/article/components/details.html 使用。
+# 各项用途：
+#   wordCount / publishedOn / lastModifiedOn —— 主题 v4.0.3 已删除或没有这些文案，
+#       供本地覆盖的 layouts/_partials/article/components/details.html 使用；
+#   readingTime / designedBy —— 恢复原 fork 的措辞（全角冒号、署名）；
+#   codeblock.copy / copied —— 复制按钮文案，copied 沿用原 fork 的「成功」。
 [article]
-    wordCount = "{{ .Count }} 字"
+    wordCount      = "{{ .Count }} 字"
+    publishedOn    = "发布于："
+    lastModifiedOn = "修改于："
+    readingTime    = "阅读时长：{{ .Count }} 分钟"
+
+    [article.codeblock]
+        copy   = "复制"
+        copied = "成功"
+
+[footer]
+    designedBy = "主题 {{ .Theme }} 由 {{ .DesignedBy }} 设计，由 蛋卷儿 深入修改"

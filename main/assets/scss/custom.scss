@@ -213,3 +213,33 @@ body::after {
     background-color: transparent;
 }
 // 滚动条样式导入结束
+
+// 页脚新增区块导入
+// 主题只给 .copyright 与 .powerby 定了样式，这里让新增的两块跟随 .powerby 的配色与字号
+// （等价于原本对主题 partials/footer.scss 里那条规则追加选择器，但不必再覆盖一个 scss 分片）
+footer.site-footer {
+    .totalcount,
+    .running-time {
+        color: var(--body-text-color);
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+}
+// 页脚新增区块导入结束
+
+// 代码块卡片化导入
+// 主题把 .highlight 做成「出血式」通栏（左右负边距 + 加宽），这里改回卡片：圆角、阴影、不贴边。
+// 与主题同权重（0,2,0），本文件在 style.scss 最后导入，故无需 !important。
+.article-content .highlight {
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+}
+
+// 复制按钮内边距：原 fork 写的是非法的 padding: auto（浏览器整条丢弃，退回 UA 默认），这里给明确值
+.article-content .copyCodeButton {
+    padding: 4px 10px;
+}
+// 代码块卡片化导入结束
