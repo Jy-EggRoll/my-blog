@@ -2,3 +2,4 @@ public/
 resources/
 node_modules/
 !sudo.exe
+.hugo_build.lock
