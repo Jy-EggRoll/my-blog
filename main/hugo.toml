@@ -18,6 +18,13 @@ title          = "蛋卷儿的博客"           # 网页显示的标题
     SortBy  = "lastmod"
     favicon = "favicon.png"
 
+    # v4.0.3 的响应式图片会为正文图片生成多尺寸变体，但动图会被重编码放大：
+    # 实测 调节.gif 由 12.3MiB 涨到 28.8MiB，超过 Cloudflare Pages 单文件 25MiB 上限；
+    # 且 Go 解码器无法解码部分动图（lzw: invalid code），会直接中断构建。
+    # 待存量图片（关于页 JPEG 与动图）瘦身完成后，再评估改回 true。
+    [params.imageProcessing.content]
+        enabled = false
+
     [params.footer]
         since = 2024
 

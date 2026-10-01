@@ -1,0 +1,5 @@
+# 项目级 i18n，与主题自带的 i18n/zh.toml 合并（同名键以项目为准）。
+# 主题 v4.0.3 删除了 wordCount 文案，这里按需补回，供本地覆盖的
+# layouts/_partials/article/components/details.html 使用。
+[article]
+    wordCount = "{{ .Count }} 字"
