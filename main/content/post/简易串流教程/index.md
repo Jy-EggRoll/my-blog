@@ -1,7 +1,7 @@
 ---
 title: 简易串流教程
 date: 2024-12-10
-lastmod: 2026-05-18
+lastmod: 2026-10-19
 image: 
 categories:
     - 技术
@@ -80,18 +80,28 @@ Moonlight 是 Sunshine 串流的接收端。该软件同样是开源的，对性
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd> | 隐藏 Moonlight 窗口 |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | 显示连接信息 |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd> | 切换鼠标：远程桌面模式/游戏模式 |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | 切换鼠标显示/隐藏 |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd> | 切换鼠标显示/隐藏 |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Z</kbd> | 切换鼠标与键盘捕获（把鼠标临时交还给本机） |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd> | 切换是否把光标锁定在串流画面内 |
 
 ### 个人推荐设置
 
 除去默认设置，建议打开：
 
-- 为远程桌面而不是游戏优化鼠标（在 Moonlight 处于窗口模式下时，可以实现窗口和窗口外部的无缝鼠标切换）
+- 为远程桌面而不是游戏优化鼠标（鼠标不再被串流独占，其输入捕获跟随窗口焦点，点选窗口外的程序与点回串流画面都不需要按快捷键）
 - 捕获系统快捷键-全屏（字面意思，灵活的快捷键穿透）
+
+显示模式选择“无边框窗口”或“窗口化”。这个选项在“基本设置”里，不要与“界面设置”里的“窗口显示模式”混看，后者控制的是 Moonlight 程序自身的窗口。在“全屏”下，Moonlight 会把光标锁定在串流画面区域内，鼠标无法移到其他显示器；无边框窗口只在单显示器时才有这个限制，所以多显示器下用无边框窗口即可自由跨屏。
 
 建议关闭：
 
 - 垂直同步（当网络条件不佳时，强行垂直同步会加剧卡顿）
+
+> [!WARNING]
+>
+> 上述推荐设置生效时，不要按 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Z</kbd>。按下它会手动关闭输入捕获，此后捕获就不再跟随窗口焦点，需要再按一次才能恢复。
+>
+> 也不要按 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>L</kbd>。按下它会把光标锁定在画面区域内，且本次串流期间不再自动解除，需要再按一次才恢复。
 
 ## 其他用法
 
